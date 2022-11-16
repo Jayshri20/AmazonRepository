@@ -3,7 +3,7 @@
 <suite name="RegressionTest" thread-count="3" parallel="classes">
 
 <listeners>
-<listener class-name="extendReport.ExtentTestNGIReporterListener"/>
+<listener class-name="extendReport.ExtendTestNGIReporterListener"/>
 </listeners>
 
   <test  name="ChromeTest">

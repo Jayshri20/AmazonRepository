@@ -23,7 +23,7 @@ import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 
-public class ExtendTestNGReporterListener implements IReporter {
+public class ExtendTestNGIReporterListener implements IReporter {
 	 private static final String OUTPUT_FOLDER = "test-output/ExtendReport/";
 	    private static final String FILE_NAME = "Extent.html";
 	    
