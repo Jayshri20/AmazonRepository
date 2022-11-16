@@ -12,6 +12,7 @@
       <class name="TestNGpack.VerifyAddToCardButton"/>
       <class name="TestNGpack.VerifyProductDetailspage"/>
       <class name="TestNGpack.VerifyHomePage"/>
+      <class name="TestNGpack.VerifySignInPage"/>
      
     </classes>
   </test> <!-- Test -->
@@ -22,6 +23,7 @@
       <class name="TestNGpack.VerifyAddToCardButton"/>
       <class name="TestNGpack.VerifyProductDetailspage"/>
       <class name="TestNGpack.VerifyHomePage"/>
+      <class name="TestNGpack.VerifySignInPage"/>
      
     </classes>
   </test> <!-- Test -->

@@ -7,9 +7,22 @@
   <test thread-count="3" parallel="classes" name="ChromeTest(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
+      <class name="TestNGpack.VerifyHomePage">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="createPOMObjects"/>
+          <include name="openAmazonHomePage"/>
+          <include name="verifyhomepage"/>
+          <include name="logoutFromApplication"/>
+          <include name="clearAll"/>
+          <include name="verifySearchBar"/>
+        </methods>
+      </class> <!-- TestNGpack.VerifyHomePage -->
       <class name="TestNGpack.VerifyProductDetailspage">
         <methods>
           <include name="verifyColourOfProduct"/>
+          <include name="vefiySearchBarButton"/>
           <include name="verifyProductDitails"/>
           <include name="launchBrowser"/>
           <include name="logoutApplication"/>
@@ -19,14 +32,40 @@
           <include name="createPOMObjects"/>
         </methods>
       </class> <!-- TestNGpack.VerifyProductDetailspage -->
+      <class name="TestNGpack.VerifyAddToCardButton">
+        <methods>
+          <include name="createPOMObjects"/>
+          <include name="launchBrowser"/>
+          <include name="openAmazonHomePage"/>
+          <include name="logOutFromApplication"/>
+          <include name="logOutFromApplication"/>
+          <include name="verifyAddToCardButton"/>
+          <include name="closeTheBrowser"/>
+          <include name="clearAll"/>
+          <include name="verifySearchBar"/>
+        </methods>
+      </class> <!-- TestNGpack.VerifyAddToCardButton -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
   <test thread-count="3" parallel="classes" name="EdgeTest(failed)">
     <parameter name="browser" value="Edge"/>
     <classes>
+      <class name="TestNGpack.VerifyHomePage">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="createPOMObjects"/>
+          <include name="openAmazonHomePage"/>
+          <include name="verifyhomepage"/>
+          <include name="logoutFromApplication"/>
+          <include name="clearAll"/>
+          <include name="verifySearchBar"/>
+        </methods>
+      </class> <!-- TestNGpack.VerifyHomePage -->
       <class name="TestNGpack.VerifyProductDetailspage">
         <methods>
           <include name="verifyColourOfProduct"/>
+          <include name="vefiySearchBarButton"/>
           <include name="verifyProductDitails"/>
           <include name="launchBrowser"/>
           <include name="logoutApplication"/>
@@ -36,6 +75,19 @@
           <include name="createPOMObjects"/>
         </methods>
       </class> <!-- TestNGpack.VerifyProductDetailspage -->
+      <class name="TestNGpack.VerifyAddToCardButton">
+        <methods>
+          <include name="createPOMObjects"/>
+          <include name="launchBrowser"/>
+          <include name="openAmazonHomePage"/>
+          <include name="logOutFromApplication"/>
+          <include name="logOutFromApplication"/>
+          <include name="verifyAddToCardButton"/>
+          <include name="closeTheBrowser"/>
+          <include name="clearAll"/>
+          <include name="verifySearchBar"/>
+        </methods>
+      </class> <!-- TestNGpack.VerifyAddToCardButton -->
     </classes>
   </test> <!-- EdgeTest(failed) -->
 </suite> <!-- Failed suite [RegressionTest] -->

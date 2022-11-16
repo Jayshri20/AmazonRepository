@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="16" passed="12" failed="3" skipped="1">
+<testng-results ignored="0" total="16" passed="0" failed="0" skipped="16">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-16T13:48:59 IST" name="RegressionTest" finished-at="2022-11-16T13:53:14 IST" duration-ms="255143">
+  <suite started-at="2022-11-16T14:05:15 IST" name="RegressionTest" finished-at="2022-11-16T14:05:34 IST" duration-ms="19454">
     <groups>
     </groups>
-    <test started-at="2022-11-16T13:48:59 IST" name="ChromeTest" finished-at="2022-11-16T13:51:06 IST" duration-ms="127116">
+    <test started-at="2022-11-16T14:05:15 IST" name="ChromeTest" finished-at="2022-11-16T14:05:25 IST" duration-ms="10029">
       <class name="TestNGpack.VerifyHomePage">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestNGpack.VerifyHomePage@399f45b1]" started-at="2022-11-16T13:49:03 IST" name="launchBrowser" finished-at="2022-11-16T13:49:07 IST" duration-ms="4158" status="PASS">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestNGpack.VerifyHomePage@399f45b1]" started-at="2022-11-16T14:05:16 IST" name="launchBrowser" finished-at="2022-11-16T14:05:17 IST" duration-ms="937" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,45 +18,192 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TestNGpack.VerifyHomePage@399f45b1]" started-at="2022-11-16T13:49:13 IST" name="createPOMObjects" finished-at="2022-11-16T13:49:13 IST" duration-ms="76" status="PASS">
+        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TestNGpack.VerifyHomePage@399f45b1]" started-at="2022-11-16T14:05:18 IST" name="createPOMObjects" finished-at="2022-11-16T14:05:18 IST" duration-ms="73" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPOMObjects -->
-        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyHomePage@399f45b1]" started-at="2022-11-16T13:49:13 IST" name="openAmazonHomePage" finished-at="2022-11-16T13:49:55 IST" duration-ms="41596" status="PASS">
+        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyHomePage@399f45b1]" started-at="2022-11-16T14:05:18 IST" name="openAmazonHomePage" finished-at="2022-11-16T14:05:24 IST" duration-ms="6485" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59259}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e127591f7a22402d6710ffb95a8ee25]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59259}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e127591f7a22402d6710ffb95a8ee25
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at TestNGpack.VerifyHomePage.openAmazonHomePage(VerifyHomePage.java:66)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openAmazonHomePage -->
-        <test-method signature="verifyhomepage()[pri:1, instance:TestNGpack.VerifyHomePage@399f45b1]" started-at="2022-11-16T13:49:55 IST" name="verifyhomepage" finished-at="2022-11-16T13:49:59 IST" duration-ms="4526" status="PASS">
+        <test-method signature="verifyhomepage()[pri:1, instance:TestNGpack.VerifyHomePage@399f45b1]" started-at="2022-11-16T14:05:25 IST" name="verifyhomepage" finished-at="2022-11-16T14:05:25 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59259}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e127591f7a22402d6710ffb95a8ee25]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59259}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e127591f7a22402d6710ffb95a8ee25
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at TestNGpack.VerifyHomePage.openAmazonHomePage(VerifyHomePage.java:66)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyhomepage -->
-        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:TestNGpack.VerifyHomePage@399f45b1]" started-at="2022-11-16T13:49:59 IST" name="logoutFromApplication" finished-at="2022-11-16T13:50:00 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:TestNGpack.VerifyHomePage@399f45b1]" started-at="2022-11-16T14:05:25 IST" name="logoutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587725039" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromApplication -->
-        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyHomePage@399f45b1]" started-at="2022-11-16T13:50:00 IST" name="openAmazonHomePage" finished-at="2022-11-16T13:50:07 IST" duration-ms="7122" status="PASS">
+        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyHomePage@399f45b1]" started-at="2022-11-16T14:05:25 IST" name="openAmazonHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587725043" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openAmazonHomePage -->
-        <test-method signature="verifySearchBar()[pri:2, instance:TestNGpack.VerifyHomePage@399f45b1]" started-at="2022-11-16T13:50:07 IST" name="verifySearchBar" finished-at="2022-11-16T13:50:13 IST" duration-ms="6834" status="PASS">
+        <test-method signature="verifySearchBar()[pri:2, instance:TestNGpack.VerifyHomePage@399f45b1]" started-at="2022-11-16T14:05:25 IST" name="verifySearchBar" finished-at="2022-11-16T14:05:25 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59259}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e127591f7a22402d6710ffb95a8ee25]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59259}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e127591f7a22402d6710ffb95a8ee25
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at TestNGpack.VerifyHomePage.openAmazonHomePage(VerifyHomePage.java:66)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchBar -->
-        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:TestNGpack.VerifyHomePage@399f45b1]" started-at="2022-11-16T13:50:13 IST" name="logoutFromApplication" finished-at="2022-11-16T13:50:13 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:TestNGpack.VerifyHomePage@399f45b1]" started-at="2022-11-16T14:05:25 IST" name="logoutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587725052" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromApplication -->
-        <test-method is-config="true" signature="clearAll()[pri:0, instance:TestNGpack.VerifyHomePage@399f45b1]" started-at="2022-11-16T13:50:13 IST" name="clearAll" finished-at="2022-11-16T13:50:13 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="clearAll()[pri:0, instance:TestNGpack.VerifyHomePage@399f45b1]" started-at="2022-11-16T14:05:25 IST" name="clearAll" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587725062" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearAll -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNGpack.VerifyHomePage@399f45b1]" started-at="2022-11-16T13:51:06 IST" name="closeBrowser" finished-at="2022-11-16T13:51:06 IST" duration-ms="225" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNGpack.VerifyHomePage@399f45b1]" started-at="2022-11-16T14:05:25 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587725107" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- TestNGpack.VerifyHomePage -->
       <class name="TestNGpack.VerifyAddToCardButton">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestNGpack.VerifyAddToCardButton@245b4bdc]" started-at="2022-11-16T13:48:59 IST" name="launchBrowser" finished-at="2022-11-16T13:49:03 IST" duration-ms="3890" status="PASS">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestNGpack.VerifyAddToCardButton@245b4bdc]" started-at="2022-11-16T14:05:15 IST" name="launchBrowser" finished-at="2022-11-16T14:05:16 IST" duration-ms="1575" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -67,57 +214,253 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TestNGpack.VerifyAddToCardButton@245b4bdc]" started-at="2022-11-16T13:49:13 IST" name="createPOMObjects" finished-at="2022-11-16T13:49:13 IST" duration-ms="82" status="PASS">
+        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TestNGpack.VerifyAddToCardButton@245b4bdc]" started-at="2022-11-16T14:05:18 IST" name="createPOMObjects" finished-at="2022-11-16T14:05:18 IST" duration-ms="81" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPOMObjects -->
-        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyAddToCardButton@245b4bdc]" started-at="2022-11-16T13:49:13 IST" name="openAmazonHomePage" finished-at="2022-11-16T13:49:58 IST" duration-ms="44673" status="PASS">
+        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyAddToCardButton@245b4bdc]" started-at="2022-11-16T14:05:18 IST" name="openAmazonHomePage" finished-at="2022-11-16T14:05:24 IST" duration-ms="6485" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b8095007be1a8e31f4f52c14bdf43721]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b8095007be1a8e31f4f52c14bdf43721
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at TestNGpack.VerifyAddToCardButton.openAmazonHomePage(VerifyAddToCardButton.java:67)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openAmazonHomePage -->
-        <test-method signature="verifySearchBar()[pri:1, instance:TestNGpack.VerifyAddToCardButton@245b4bdc]" started-at="2022-11-16T13:49:58 IST" name="verifySearchBar" finished-at="2022-11-16T13:50:06 IST" duration-ms="8235" status="PASS">
+        <test-method signature="verifySearchBar()[pri:1, instance:TestNGpack.VerifyAddToCardButton@245b4bdc]" started-at="2022-11-16T14:05:25 IST" name="verifySearchBar" finished-at="2022-11-16T14:05:25 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b8095007be1a8e31f4f52c14bdf43721]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b8095007be1a8e31f4f52c14bdf43721
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at TestNGpack.VerifyAddToCardButton.openAmazonHomePage(VerifyAddToCardButton.java:67)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchBar -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:TestNGpack.VerifyAddToCardButton@245b4bdc]" started-at="2022-11-16T13:50:06 IST" name="logOutFromApplication" finished-at="2022-11-16T13:50:06 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:TestNGpack.VerifyAddToCardButton@245b4bdc]" started-at="2022-11-16T14:05:25 IST" name="logOutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587725033" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyAddToCardButton@245b4bdc]" started-at="2022-11-16T13:50:06 IST" name="openAmazonHomePage" finished-at="2022-11-16T13:50:16 IST" duration-ms="9424" status="PASS">
+        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyAddToCardButton@245b4bdc]" started-at="2022-11-16T14:05:25 IST" name="openAmazonHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587725038" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openAmazonHomePage -->
-        <test-method signature="verifyAddToCardButton()[pri:2, instance:TestNGpack.VerifyAddToCardButton@245b4bdc]" started-at="2022-11-16T13:50:16 IST" name="verifyAddToCardButton" finished-at="2022-11-16T13:50:18 IST" duration-ms="2391" status="PASS">
+        <test-method signature="verifyAddToCardButton()[pri:2, instance:TestNGpack.VerifyAddToCardButton@245b4bdc]" started-at="2022-11-16T14:05:25 IST" name="verifyAddToCardButton" finished-at="2022-11-16T14:05:25 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b8095007be1a8e31f4f52c14bdf43721]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b8095007be1a8e31f4f52c14bdf43721
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at TestNGpack.VerifyAddToCardButton.openAmazonHomePage(VerifyAddToCardButton.java:67)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddToCardButton -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:TestNGpack.VerifyAddToCardButton@245b4bdc]" started-at="2022-11-16T13:50:18 IST" name="logOutFromApplication" finished-at="2022-11-16T13:50:18 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:TestNGpack.VerifyAddToCardButton@245b4bdc]" started-at="2022-11-16T14:05:25 IST" name="logOutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587725050" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyAddToCardButton@245b4bdc]" started-at="2022-11-16T13:50:18 IST" name="openAmazonHomePage" finished-at="2022-11-16T13:50:21 IST" duration-ms="2790" status="PASS">
+        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyAddToCardButton@245b4bdc]" started-at="2022-11-16T14:05:25 IST" name="openAmazonHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587725056" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openAmazonHomePage -->
-        <test-method signature="logOutFromApplication()[pri:3, instance:TestNGpack.VerifyAddToCardButton@245b4bdc]" started-at="2022-11-16T13:50:21 IST" name="logOutFromApplication" finished-at="2022-11-16T13:50:21 IST" duration-ms="2" status="PASS">
+        <test-method signature="logOutFromApplication()[pri:3, instance:TestNGpack.VerifyAddToCardButton@245b4bdc]" started-at="2022-11-16T14:05:25 IST" name="logOutFromApplication" finished-at="2022-11-16T14:05:25 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b8095007be1a8e31f4f52c14bdf43721]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b8095007be1a8e31f4f52c14bdf43721
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at TestNGpack.VerifyAddToCardButton.openAmazonHomePage(VerifyAddToCardButton.java:67)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="clearAll()[pri:0, instance:TestNGpack.VerifyAddToCardButton@245b4bdc]" started-at="2022-11-16T13:50:21 IST" name="clearAll" finished-at="2022-11-16T13:50:21 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:TestNGpack.VerifyAddToCardButton@245b4bdc]" started-at="2022-11-16T14:05:25 IST" name="logOutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587725085" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutFromApplication -->
+        <test-method is-config="true" signature="clearAll()[pri:0, instance:TestNGpack.VerifyAddToCardButton@245b4bdc]" started-at="2022-11-16T14:05:25 IST" name="clearAll" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587725089" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearAll -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:TestNGpack.VerifyAddToCardButton@245b4bdc]" started-at="2022-11-16T13:50:21 IST" name="logOutFromApplication" finished-at="2022-11-16T13:50:21 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:TestNGpack.VerifyAddToCardButton@245b4bdc]" started-at="2022-11-16T13:51:06 IST" name="closeTheBrowser" finished-at="2022-11-16T13:51:06 IST" duration-ms="143" status="PASS">
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:TestNGpack.VerifyAddToCardButton@245b4bdc]" started-at="2022-11-16T14:05:25 IST" name="closeTheBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587725102" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTheBrowser -->
       </class> <!-- TestNGpack.VerifyAddToCardButton -->
       <class name="TestNGpack.VerifyProductDetailspage">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestNGpack.VerifyProductDetailspage@2d7275fc]" started-at="2022-11-16T13:49:07 IST" name="launchBrowser" finished-at="2022-11-16T13:49:13 IST" duration-ms="6039" status="PASS">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestNGpack.VerifyProductDetailspage@2d7275fc]" started-at="2022-11-16T14:05:17 IST" name="launchBrowser" finished-at="2022-11-16T14:05:18 IST" duration-ms="779" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -128,49 +471,143 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TestNGpack.VerifyProductDetailspage@2d7275fc]" started-at="2022-11-16T13:49:13 IST" name="createPOMObjects" finished-at="2022-11-16T13:49:13 IST" duration-ms="85" status="PASS">
+        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TestNGpack.VerifyProductDetailspage@2d7275fc]" started-at="2022-11-16T14:05:18 IST" name="createPOMObjects" finished-at="2022-11-16T14:05:18 IST" duration-ms="83" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPOMObjects -->
-        <test-method is-config="true" signature="openAmazoneHomePage()[pri:0, instance:TestNGpack.VerifyProductDetailspage@2d7275fc]" started-at="2022-11-16T13:49:13 IST" name="openAmazoneHomePage" finished-at="2022-11-16T13:49:47 IST" duration-ms="33694" status="PASS">
+        <test-method is-config="true" signature="openAmazoneHomePage()[pri:0, instance:TestNGpack.VerifyProductDetailspage@2d7275fc]" started-at="2022-11-16T14:05:18 IST" name="openAmazoneHomePage" finished-at="2022-11-16T14:05:24 IST" duration-ms="6486" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59271}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0f8ce30913c9be558ac6b508c8abcaa1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59271}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0f8ce30913c9be558ac6b508c8abcaa1
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at TestNGpack.VerifyProductDetailspage.openAmazoneHomePage(VerifyProductDetailspage.java:66)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openAmazoneHomePage -->
-        <test-method signature="vefiySearchBarButton()[pri:1, instance:TestNGpack.VerifyProductDetailspage@2d7275fc]" started-at="2022-11-16T13:49:47 IST" name="vefiySearchBarButton" finished-at="2022-11-16T13:50:01 IST" duration-ms="13975" status="PASS">
+        <test-method signature="vefiySearchBarButton()[pri:1, instance:TestNGpack.VerifyProductDetailspage@2d7275fc]" started-at="2022-11-16T14:05:25 IST" name="vefiySearchBarButton" finished-at="2022-11-16T14:05:25 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59271}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0f8ce30913c9be558ac6b508c8abcaa1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59271}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0f8ce30913c9be558ac6b508c8abcaa1
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at TestNGpack.VerifyProductDetailspage.openAmazoneHomePage(VerifyProductDetailspage.java:66)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vefiySearchBarButton -->
-        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:TestNGpack.VerifyProductDetailspage@2d7275fc]" started-at="2022-11-16T13:50:01 IST" name="logoutApplication" finished-at="2022-11-16T13:50:01 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:TestNGpack.VerifyProductDetailspage@2d7275fc]" started-at="2022-11-16T14:05:25 IST" name="logoutApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587725041" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutApplication -->
-        <test-method is-config="true" signature="openAmazoneHomePage()[pri:0, instance:TestNGpack.VerifyProductDetailspage@2d7275fc]" started-at="2022-11-16T13:50:01 IST" name="openAmazoneHomePage" finished-at="2022-11-16T13:50:13 IST" duration-ms="11664" status="PASS">
+        <test-method is-config="true" signature="openAmazoneHomePage()[pri:0, instance:TestNGpack.VerifyProductDetailspage@2d7275fc]" started-at="2022-11-16T14:05:25 IST" name="openAmazoneHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587725050" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openAmazoneHomePage -->
-        <test-method signature="verifyProductDitails()[pri:2, instance:TestNGpack.VerifyProductDetailspage@2d7275fc]" started-at="2022-11-16T13:50:13 IST" name="verifyProductDitails" finished-at="2022-11-16T13:50:36 IST" duration-ms="23050" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="verifyProductDitails()[pri:2, instance:TestNGpack.VerifyProductDetailspage@2d7275fc]" started-at="2022-11-16T14:05:25 IST" name="verifyProductDitails" finished-at="2022-11-16T14:05:25 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//img[@class='imgSwatch'])[6]"}
+              <![CDATA[unknown error: net::ERR_NAME_NOT_RESOLVED
   (Session info: chrome=107.0.5304.107)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60230}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c257d0980ab9ed46e3694c1f191934c0
-*** Element info: {Using=xpath, value=(//img[@class='imgSwatch'])[6]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59271}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0f8ce30913c9be558ac6b508c8abcaa1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//img[@class='imgSwatch'])[6]"}
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
   (Session info: chrome=107.0.5304.107)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60230}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c257d0980ab9ed46e3694c1f191934c0
-*** Element info: {Using=xpath, value=(//img[@class='imgSwatch'])[6]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59271}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0f8ce30913c9be558ac6b508c8abcaa1
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -180,19 +617,16 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-at Pages.ProductDisplayPage.clickonimgcolourwhite(ProductDisplayPage.java:89)
-at TestNGpack.VerifyProductDetailspage.verifyProductDitails(VerifyProductDetailspage.java:88)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at TestNGpack.VerifyProductDetailspage.openAmazoneHomePage(VerifyProductDetailspage.java:66)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
@@ -204,41 +638,37 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductDitails -->
-        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:TestNGpack.VerifyProductDetailspage@2d7275fc]" started-at="2022-11-16T13:50:36 IST" name="logoutApplication" finished-at="2022-11-16T13:50:36 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:TestNGpack.VerifyProductDetailspage@2d7275fc]" started-at="2022-11-16T14:05:25 IST" name="logoutApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587725085" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutApplication -->
-        <test-method is-config="true" signature="openAmazoneHomePage()[pri:0, instance:TestNGpack.VerifyProductDetailspage@2d7275fc]" started-at="2022-11-16T13:50:36 IST" name="openAmazoneHomePage" finished-at="2022-11-16T13:50:44 IST" duration-ms="7952" status="PASS">
+        <test-method is-config="true" signature="openAmazoneHomePage()[pri:0, instance:TestNGpack.VerifyProductDetailspage@2d7275fc]" started-at="2022-11-16T14:05:25 IST" name="openAmazoneHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587725088" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openAmazoneHomePage -->
-        <test-method signature="verifyColourOfProduct()[pri:3, instance:TestNGpack.VerifyProductDetailspage@2d7275fc]" started-at="2022-11-16T13:50:44 IST" name="verifyColourOfProduct" finished-at="2022-11-16T13:51:06 IST" duration-ms="22045" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="verifyColourOfProduct()[pri:3, instance:TestNGpack.VerifyProductDetailspage@2d7275fc]" started-at="2022-11-16T14:05:25 IST" name="verifyColourOfProduct" finished-at="2022-11-16T14:05:25 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//img[@class='imgSwatch'])[3]"}
+              <![CDATA[unknown error: net::ERR_NAME_NOT_RESOLVED
   (Session info: chrome=107.0.5304.107)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60230}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c257d0980ab9ed46e3694c1f191934c0
-*** Element info: {Using=xpath, value=(//img[@class='imgSwatch'])[3]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59271}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0f8ce30913c9be558ac6b508c8abcaa1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//img[@class='imgSwatch'])[3]"}
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
   (Session info: chrome=107.0.5304.107)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60230}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c257d0980ab9ed46e3694c1f191934c0
-*** Element info: {Using=xpath, value=(//img[@class='imgSwatch'])[3]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59271}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0f8ce30913c9be558ac6b508c8abcaa1
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -248,19 +678,16 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-at Pages.ProductDisplayPage.clickonimgcolourblue(ProductDisplayPage.java:85)
-at TestNGpack.VerifyProductDetailspage.verifyColourOfProduct(VerifyProductDetailspage.java:95)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at TestNGpack.VerifyProductDetailspage.openAmazoneHomePage(VerifyProductDetailspage.java:66)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
@@ -272,27 +699,27 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyColourOfProduct -->
-        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:TestNGpack.VerifyProductDetailspage@2d7275fc]" started-at="2022-11-16T13:51:06 IST" name="logoutApplication" finished-at="2022-11-16T13:51:06 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:TestNGpack.VerifyProductDetailspage@2d7275fc]" started-at="2022-11-16T14:05:25 IST" name="logoutApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587725095" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutApplication -->
-        <test-method is-config="true" signature="clearAll()[pri:0, instance:TestNGpack.VerifyProductDetailspage@2d7275fc]" started-at="2022-11-16T13:51:06 IST" name="clearAll" finished-at="2022-11-16T13:51:06 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="clearAll()[pri:0, instance:TestNGpack.VerifyProductDetailspage@2d7275fc]" started-at="2022-11-16T14:05:25 IST" name="clearAll" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587725097" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearAll -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNGpack.VerifyProductDetailspage@2d7275fc]" started-at="2022-11-16T13:51:06 IST" name="closeBrowser" finished-at="2022-11-16T13:51:06 IST" duration-ms="113" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNGpack.VerifyProductDetailspage@2d7275fc]" started-at="2022-11-16T14:05:25 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587725108" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- TestNGpack.VerifyProductDetailspage -->
     </test> <!-- ChromeTest -->
-    <test started-at="2022-11-16T13:51:06 IST" name="EdgeTest" finished-at="2022-11-16T13:53:14 IST" duration-ms="127928">
+    <test started-at="2022-11-16T14:05:25 IST" name="EdgeTest" finished-at="2022-11-16T14:05:34 IST" duration-ms="9258">
       <class name="TestNGpack.VerifyHomePage">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestNGpack.VerifyHomePage@34a3d150]" started-at="2022-11-16T13:51:07 IST" name="launchBrowser" finished-at="2022-11-16T13:51:10 IST" duration-ms="2837" status="PASS">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestNGpack.VerifyHomePage@34a3d150]" started-at="2022-11-16T14:05:28 IST" name="launchBrowser" finished-at="2022-11-16T14:05:30 IST" duration-ms="2839" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -303,159 +730,29 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TestNGpack.VerifyHomePage@34a3d150]" started-at="2022-11-16T13:51:13 IST" name="createPOMObjects" finished-at="2022-11-16T13:51:13 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TestNGpack.VerifyHomePage@34a3d150]" started-at="2022-11-16T14:05:33 IST" name="createPOMObjects" finished-at="2022-11-16T14:05:33 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPOMObjects -->
-        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyHomePage@34a3d150]" started-at="2022-11-16T13:51:13 IST" name="openAmazonHomePage" finished-at="2022-11-16T13:51:33 IST" duration-ms="20157" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openAmazonHomePage -->
-        <test-method signature="verifyhomepage()[pri:1, instance:TestNGpack.VerifyHomePage@34a3d150]" started-at="2022-11-16T13:51:33 IST" name="verifyhomepage" finished-at="2022-11-16T13:51:36 IST" duration-ms="3266" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyhomepage -->
-        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:TestNGpack.VerifyHomePage@34a3d150]" started-at="2022-11-16T13:51:36 IST" name="logoutFromApplication" finished-at="2022-11-16T13:51:36 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutFromApplication -->
-        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyHomePage@34a3d150]" started-at="2022-11-16T13:51:36 IST" name="openAmazonHomePage" finished-at="2022-11-16T13:51:43 IST" duration-ms="6995" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openAmazonHomePage -->
-        <test-method signature="verifySearchBar()[pri:2, instance:TestNGpack.VerifyHomePage@34a3d150]" started-at="2022-11-16T13:51:43 IST" name="verifySearchBar" finished-at="2022-11-16T13:51:48 IST" duration-ms="4468" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchBar -->
-        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:TestNGpack.VerifyHomePage@34a3d150]" started-at="2022-11-16T13:51:48 IST" name="logoutFromApplication" finished-at="2022-11-16T13:51:48 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutFromApplication -->
-        <test-method is-config="true" signature="clearAll()[pri:0, instance:TestNGpack.VerifyHomePage@34a3d150]" started-at="2022-11-16T13:51:48 IST" name="clearAll" finished-at="2022-11-16T13:51:48 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clearAll -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNGpack.VerifyHomePage@34a3d150]" started-at="2022-11-16T13:53:14 IST" name="closeBrowser" finished-at="2022-11-16T13:53:14 IST" duration-ms="210" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- TestNGpack.VerifyHomePage -->
-      <class name="TestNGpack.VerifyAddToCardButton">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestNGpack.VerifyAddToCardButton@6302bbb1]" started-at="2022-11-16T13:51:06 IST" name="launchBrowser" finished-at="2022-11-16T13:51:07 IST" duration-ms="1007" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TestNGpack.VerifyAddToCardButton@6302bbb1]" started-at="2022-11-16T13:51:13 IST" name="createPOMObjects" finished-at="2022-11-16T13:51:13 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createPOMObjects -->
-        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyAddToCardButton@6302bbb1]" started-at="2022-11-16T13:51:13 IST" name="openAmazonHomePage" finished-at="2022-11-16T13:51:26 IST" duration-ms="12665" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openAmazonHomePage -->
-        <test-method signature="verifySearchBar()[pri:1, instance:TestNGpack.VerifyAddToCardButton@6302bbb1]" started-at="2022-11-16T13:51:26 IST" name="verifySearchBar" finished-at="2022-11-16T13:51:31 IST" duration-ms="5520" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchBar -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:TestNGpack.VerifyAddToCardButton@6302bbb1]" started-at="2022-11-16T13:51:31 IST" name="logOutFromApplication" finished-at="2022-11-16T13:51:31 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyAddToCardButton@6302bbb1]" started-at="2022-11-16T13:51:31 IST" name="openAmazonHomePage" finished-at="2022-11-16T13:51:43 IST" duration-ms="12175" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openAmazonHomePage -->
-        <test-method signature="verifyAddToCardButton()[pri:2, instance:TestNGpack.VerifyAddToCardButton@6302bbb1]" started-at="2022-11-16T13:51:43 IST" name="verifyAddToCardButton" finished-at="2022-11-16T13:51:46 IST" duration-ms="2811" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddToCardButton -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:TestNGpack.VerifyAddToCardButton@6302bbb1]" started-at="2022-11-16T13:51:46 IST" name="logOutFromApplication" finished-at="2022-11-16T13:51:46 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyAddToCardButton@6302bbb1]" started-at="2022-11-16T13:51:46 IST" name="openAmazonHomePage" finished-at="2022-11-16T13:53:00 IST" duration-ms="73565" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openAmazonHomePage -->
-        <test-method signature="logOutFromApplication()[pri:3, instance:TestNGpack.VerifyAddToCardButton@6302bbb1]" started-at="2022-11-16T13:53:00 IST" name="logOutFromApplication" finished-at="2022-11-16T13:53:00 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:TestNGpack.VerifyAddToCardButton@6302bbb1]" started-at="2022-11-16T13:53:00 IST" name="logOutFromApplication" finished-at="2022-11-16T13:53:00 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="clearAll()[pri:0, instance:TestNGpack.VerifyAddToCardButton@6302bbb1]" started-at="2022-11-16T13:53:00 IST" name="clearAll" finished-at="2022-11-16T13:53:00 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clearAll -->
-        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:TestNGpack.VerifyAddToCardButton@6302bbb1]" started-at="2022-11-16T13:53:14 IST" name="closeTheBrowser" finished-at="2022-11-16T13:53:14 IST" duration-ms="206" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeTheBrowser -->
-      </class> <!-- TestNGpack.VerifyAddToCardButton -->
-      <class name="TestNGpack.VerifyProductDetailspage">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestNGpack.VerifyProductDetailspage@31304f14]" started-at="2022-11-16T13:51:10 IST" name="launchBrowser" finished-at="2022-11-16T13:51:13 IST" duration-ms="2759" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TestNGpack.VerifyProductDetailspage@31304f14]" started-at="2022-11-16T13:51:13 IST" name="createPOMObjects" finished-at="2022-11-16T13:51:13 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createPOMObjects -->
-        <test-method is-config="true" signature="openAmazoneHomePage()[pri:0, instance:TestNGpack.VerifyProductDetailspage@31304f14]" started-at="2022-11-16T13:51:13 IST" name="openAmazoneHomePage" finished-at="2022-11-16T13:51:32 IST" duration-ms="19070" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openAmazoneHomePage -->
-        <test-method signature="vefiySearchBarButton()[pri:1, instance:TestNGpack.VerifyProductDetailspage@31304f14]" started-at="2022-11-16T13:51:32 IST" name="vefiySearchBarButton" finished-at="2022-11-16T13:51:42 IST" duration-ms="9887" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- vefiySearchBarButton -->
-        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:TestNGpack.VerifyProductDetailspage@31304f14]" started-at="2022-11-16T13:51:42 IST" name="logoutApplication" finished-at="2022-11-16T13:51:42 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutApplication -->
-        <test-method is-config="true" signature="openAmazoneHomePage()[pri:0, instance:TestNGpack.VerifyProductDetailspage@31304f14]" started-at="2022-11-16T13:51:42 IST" name="openAmazoneHomePage" finished-at="2022-11-16T13:51:52 IST" duration-ms="10024" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openAmazoneHomePage -->
-        <test-method signature="verifyProductDitails()[pri:2, instance:TestNGpack.VerifyProductDetailspage@31304f14]" started-at="2022-11-16T13:51:52 IST" name="verifyProductDitails" finished-at="2022-11-16T13:53:13 IST" duration-ms="81464" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyHomePage@34a3d150]" started-at="2022-11-16T14:05:33 IST" name="openAmazonHomePage" finished-at="2022-11-16T14:05:34 IST" duration-ms="934" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//img[@class='imgSwatch'])[6]"}
+              <![CDATA[unknown error: net::ERR_NAME_NOT_RESOLVED
   (Session info: MicrosoftEdge=107.0.1418.42)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:61289}, msedge: {msedgedriverVersion: 107.0.1418.42 (5ed2a3ace08d..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fe7d55265cf09b71d7beec66cf80ece6
-*** Element info: {Using=xpath, value=(//img[@class='imgSwatch'])[6]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59351}, msedge: {msedgedriverVersion: 107.0.1418.42 (5ed2a3ace08d..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f238c0b722091aab2c5fd4e682f968bb]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//img[@class='imgSwatch'])[6]"}
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
   (Session info: MicrosoftEdge=107.0.1418.42)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:61289}, msedge: {msedgedriverVersion: 107.0.1418.42 (5ed2a3ace08d..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fe7d55265cf09b71d7beec66cf80ece6
-*** Element info: {Using=xpath, value=(//img[@class='imgSwatch'])[6]}
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59351}, msedge: {msedgedriverVersion: 107.0.1418.42 (5ed2a3ace08d..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f238c0b722091aab2c5fd4e682f968bb
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -465,19 +762,16 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-at Pages.ProductDisplayPage.clickonimgcolourwhite(ProductDisplayPage.java:89)
-at TestNGpack.VerifyProductDetailspage.verifyProductDitails(VerifyProductDetailspage.java:88)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at TestNGpack.VerifyHomePage.openAmazonHomePage(VerifyHomePage.java:66)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
@@ -489,15 +783,11 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyProductDitails -->
-        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:TestNGpack.VerifyProductDetailspage@31304f14]" started-at="2022-11-16T13:53:13 IST" name="logoutApplication" finished-at="2022-11-16T13:53:13 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutApplication -->
-        <test-method is-config="true" signature="openAmazoneHomePage()[pri:0, instance:TestNGpack.VerifyProductDetailspage@31304f14]" started-at="2022-11-16T13:53:13 IST" name="openAmazoneHomePage" finished-at="2022-11-16T13:53:14 IST" duration-ms="317" status="FAIL">
+        </test-method> <!-- openAmazonHomePage -->
+        <test-method signature="verifyhomepage()[pri:1, instance:TestNGpack.VerifyHomePage@34a3d150]" started-at="2022-11-16T14:05:34 IST" name="verifyhomepage" finished-at="2022-11-16T14:05:34 IST" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[unknown error: net::ERR_NAME_NOT_RESOLVED
@@ -505,8 +795,8 @@ at java.base/java.lang.Thread.run(Thread.java:833)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:61289}, msedge: {msedgedriverVersion: 107.0.1418.42 (5ed2a3ace08d..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fe7d55265cf09b71d7beec66cf80ece6]]>
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59351}, msedge: {msedgedriverVersion: 107.0.1418.42 (5ed2a3ace08d..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f238c0b722091aab2c5fd4e682f968bb]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
@@ -514,8 +804,408 @@ Session ID: fe7d55265cf09b71d7beec66cf80ece6]]>
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:61289}, msedge: {msedgedriverVersion: 107.0.1418.42 (5ed2a3ace08d..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fe7d55265cf09b71d7beec66cf80ece6
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59351}, msedge: {msedgedriverVersion: 107.0.1418.42 (5ed2a3ace08d..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f238c0b722091aab2c5fd4e682f968bb
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at TestNGpack.VerifyHomePage.openAmazonHomePage(VerifyHomePage.java:66)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyhomepage -->
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:TestNGpack.VerifyHomePage@34a3d150]" started-at="2022-11-16T14:05:34 IST" name="logoutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587734515" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApplication -->
+        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyHomePage@34a3d150]" started-at="2022-11-16T14:05:34 IST" name="openAmazonHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587734518" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAmazonHomePage -->
+        <test-method signature="verifySearchBar()[pri:2, instance:TestNGpack.VerifyHomePage@34a3d150]" started-at="2022-11-16T14:05:34 IST" name="verifySearchBar" finished-at="2022-11-16T14:05:34 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: MicrosoftEdge=107.0.1418.42)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59351}, msedge: {msedgedriverVersion: 107.0.1418.42 (5ed2a3ace08d..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f238c0b722091aab2c5fd4e682f968bb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: MicrosoftEdge=107.0.1418.42)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59351}, msedge: {msedgedriverVersion: 107.0.1418.42 (5ed2a3ace08d..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f238c0b722091aab2c5fd4e682f968bb
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at TestNGpack.VerifyHomePage.openAmazonHomePage(VerifyHomePage.java:66)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchBar -->
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:TestNGpack.VerifyHomePage@34a3d150]" started-at="2022-11-16T14:05:34 IST" name="logoutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587734525" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApplication -->
+        <test-method is-config="true" signature="clearAll()[pri:0, instance:TestNGpack.VerifyHomePage@34a3d150]" started-at="2022-11-16T14:05:34 IST" name="clearAll" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587734529" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearAll -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNGpack.VerifyHomePage@34a3d150]" started-at="2022-11-16T14:05:34 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587734534" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TestNGpack.VerifyHomePage -->
+      <class name="TestNGpack.VerifyAddToCardButton">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestNGpack.VerifyAddToCardButton@6302bbb1]" started-at="2022-11-16T14:05:25 IST" name="launchBrowser" finished-at="2022-11-16T14:05:28 IST" duration-ms="2723" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TestNGpack.VerifyAddToCardButton@6302bbb1]" started-at="2022-11-16T14:05:33 IST" name="createPOMObjects" finished-at="2022-11-16T14:05:33 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPOMObjects -->
+        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyAddToCardButton@6302bbb1]" started-at="2022-11-16T14:05:33 IST" name="openAmazonHomePage" finished-at="2022-11-16T14:05:34 IST" duration-ms="676" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: MicrosoftEdge=107.0.1418.42)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59305}, msedge: {msedgedriverVersion: 107.0.1418.42 (5ed2a3ace08d..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 08e87e5bb532626fa40d8768bcfa1027]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: MicrosoftEdge=107.0.1418.42)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59305}, msedge: {msedgedriverVersion: 107.0.1418.42 (5ed2a3ace08d..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 08e87e5bb532626fa40d8768bcfa1027
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at TestNGpack.VerifyAddToCardButton.openAmazonHomePage(VerifyAddToCardButton.java:67)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAmazonHomePage -->
+        <test-method signature="verifySearchBar()[pri:1, instance:TestNGpack.VerifyAddToCardButton@6302bbb1]" started-at="2022-11-16T14:05:34 IST" name="verifySearchBar" finished-at="2022-11-16T14:05:34 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: MicrosoftEdge=107.0.1418.42)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59305}, msedge: {msedgedriverVersion: 107.0.1418.42 (5ed2a3ace08d..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 08e87e5bb532626fa40d8768bcfa1027]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: MicrosoftEdge=107.0.1418.42)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59305}, msedge: {msedgedriverVersion: 107.0.1418.42 (5ed2a3ace08d..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 08e87e5bb532626fa40d8768bcfa1027
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at TestNGpack.VerifyAddToCardButton.openAmazonHomePage(VerifyAddToCardButton.java:67)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchBar -->
+        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:TestNGpack.VerifyAddToCardButton@6302bbb1]" started-at="2022-11-16T14:05:34 IST" name="logOutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587734256" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutFromApplication -->
+        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyAddToCardButton@6302bbb1]" started-at="2022-11-16T14:05:34 IST" name="openAmazonHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587734270" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAmazonHomePage -->
+        <test-method signature="verifyAddToCardButton()[pri:2, instance:TestNGpack.VerifyAddToCardButton@6302bbb1]" started-at="2022-11-16T14:05:34 IST" name="verifyAddToCardButton" finished-at="2022-11-16T14:05:34 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: MicrosoftEdge=107.0.1418.42)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59305}, msedge: {msedgedriverVersion: 107.0.1418.42 (5ed2a3ace08d..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 08e87e5bb532626fa40d8768bcfa1027]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: MicrosoftEdge=107.0.1418.42)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59305}, msedge: {msedgedriverVersion: 107.0.1418.42 (5ed2a3ace08d..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 08e87e5bb532626fa40d8768bcfa1027
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at TestNGpack.VerifyAddToCardButton.openAmazonHomePage(VerifyAddToCardButton.java:67)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddToCardButton -->
+        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:TestNGpack.VerifyAddToCardButton@6302bbb1]" started-at="2022-11-16T14:05:34 IST" name="logOutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587734279" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutFromApplication -->
+        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyAddToCardButton@6302bbb1]" started-at="2022-11-16T14:05:34 IST" name="openAmazonHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587734284" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAmazonHomePage -->
+        <test-method signature="logOutFromApplication()[pri:3, instance:TestNGpack.VerifyAddToCardButton@6302bbb1]" started-at="2022-11-16T14:05:34 IST" name="logOutFromApplication" finished-at="2022-11-16T14:05:34 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: MicrosoftEdge=107.0.1418.42)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59305}, msedge: {msedgedriverVersion: 107.0.1418.42 (5ed2a3ace08d..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 08e87e5bb532626fa40d8768bcfa1027]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: MicrosoftEdge=107.0.1418.42)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59305}, msedge: {msedgedriverVersion: 107.0.1418.42 (5ed2a3ace08d..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 08e87e5bb532626fa40d8768bcfa1027
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at TestNGpack.VerifyAddToCardButton.openAmazonHomePage(VerifyAddToCardButton.java:67)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutFromApplication -->
+        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:TestNGpack.VerifyAddToCardButton@6302bbb1]" started-at="2022-11-16T14:05:34 IST" name="logOutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587734291" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutFromApplication -->
+        <test-method is-config="true" signature="clearAll()[pri:0, instance:TestNGpack.VerifyAddToCardButton@6302bbb1]" started-at="2022-11-16T14:05:34 IST" name="clearAll" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587734301" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearAll -->
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:TestNGpack.VerifyAddToCardButton@6302bbb1]" started-at="2022-11-16T14:05:34 IST" name="closeTheBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587734532" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTheBrowser -->
+      </class> <!-- TestNGpack.VerifyAddToCardButton -->
+      <class name="TestNGpack.VerifyProductDetailspage">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestNGpack.VerifyProductDetailspage@31304f14]" started-at="2022-11-16T14:05:30 IST" name="launchBrowser" finished-at="2022-11-16T14:05:33 IST" duration-ms="2718" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TestNGpack.VerifyProductDetailspage@31304f14]" started-at="2022-11-16T14:05:33 IST" name="createPOMObjects" finished-at="2022-11-16T14:05:33 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPOMObjects -->
+        <test-method is-config="true" signature="openAmazoneHomePage()[pri:0, instance:TestNGpack.VerifyProductDetailspage@31304f14]" started-at="2022-11-16T14:05:33 IST" name="openAmazoneHomePage" finished-at="2022-11-16T14:05:34 IST" duration-ms="486" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: MicrosoftEdge=107.0.1418.42)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59395}, msedge: {msedgedriverVersion: 107.0.1418.42 (5ed2a3ace08d..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c61e199c3b664fe6a01e81d69ca89c4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: MicrosoftEdge=107.0.1418.42)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59395}, msedge: {msedgedriverVersion: 107.0.1418.42 (5ed2a3ace08d..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c61e199c3b664fe6a01e81d69ca89c4
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -550,7 +1240,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openAmazoneHomePage -->
-        <test-method signature="verifyColourOfProduct()[pri:3, instance:TestNGpack.VerifyProductDetailspage@31304f14]" started-at="2022-11-16T13:53:14 IST" name="verifyColourOfProduct" finished-at="2022-11-16T13:53:14 IST" duration-ms="0" status="SKIP">
+        <test-method signature="vefiySearchBarButton()[pri:1, instance:TestNGpack.VerifyProductDetailspage@31304f14]" started-at="2022-11-16T14:05:34 IST" name="vefiySearchBarButton" finished-at="2022-11-16T14:05:34 IST" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[unknown error: net::ERR_NAME_NOT_RESOLVED
@@ -558,8 +1248,8 @@ at java.base/java.lang.Thread.run(Thread.java:833)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:61289}, msedge: {msedgedriverVersion: 107.0.1418.42 (5ed2a3ace08d..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fe7d55265cf09b71d7beec66cf80ece6]]>
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59395}, msedge: {msedgedriverVersion: 107.0.1418.42 (5ed2a3ace08d..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c61e199c3b664fe6a01e81d69ca89c4]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
@@ -567,8 +1257,130 @@ Session ID: fe7d55265cf09b71d7beec66cf80ece6]]>
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:61289}, msedge: {msedgedriverVersion: 107.0.1418.42 (5ed2a3ace08d..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fe7d55265cf09b71d7beec66cf80ece6
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59395}, msedge: {msedgedriverVersion: 107.0.1418.42 (5ed2a3ace08d..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c61e199c3b664fe6a01e81d69ca89c4
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at TestNGpack.VerifyProductDetailspage.openAmazoneHomePage(VerifyProductDetailspage.java:66)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vefiySearchBarButton -->
+        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:TestNGpack.VerifyProductDetailspage@31304f14]" started-at="2022-11-16T14:05:34 IST" name="logoutApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587734065" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutApplication -->
+        <test-method is-config="true" signature="openAmazoneHomePage()[pri:0, instance:TestNGpack.VerifyProductDetailspage@31304f14]" started-at="2022-11-16T14:05:34 IST" name="openAmazoneHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587734066" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAmazoneHomePage -->
+        <test-method signature="verifyProductDitails()[pri:2, instance:TestNGpack.VerifyProductDetailspage@31304f14]" started-at="2022-11-16T14:05:34 IST" name="verifyProductDitails" finished-at="2022-11-16T14:05:34 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: MicrosoftEdge=107.0.1418.42)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59395}, msedge: {msedgedriverVersion: 107.0.1418.42 (5ed2a3ace08d..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c61e199c3b664fe6a01e81d69ca89c4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: MicrosoftEdge=107.0.1418.42)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59395}, msedge: {msedgedriverVersion: 107.0.1418.42 (5ed2a3ace08d..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c61e199c3b664fe6a01e81d69ca89c4
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at TestNGpack.VerifyProductDetailspage.openAmazoneHomePage(VerifyProductDetailspage.java:66)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductDitails -->
+        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:TestNGpack.VerifyProductDetailspage@31304f14]" started-at="2022-11-16T14:05:34 IST" name="logoutApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587734075" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutApplication -->
+        <test-method is-config="true" signature="openAmazoneHomePage()[pri:0, instance:TestNGpack.VerifyProductDetailspage@31304f14]" started-at="2022-11-16T14:05:34 IST" name="openAmazoneHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587734081" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAmazoneHomePage -->
+        <test-method signature="verifyColourOfProduct()[pri:3, instance:TestNGpack.VerifyProductDetailspage@31304f14]" started-at="2022-11-16T14:05:34 IST" name="verifyColourOfProduct" finished-at="2022-11-16T14:05:34 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: MicrosoftEdge=107.0.1418.42)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59395}, msedge: {msedgedriverVersion: 107.0.1418.42 (5ed2a3ace08d..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c61e199c3b664fe6a01e81d69ca89c4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: MicrosoftEdge=107.0.1418.42)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-I18JAT8J', ip: '192.168.187.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.42, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59395}, msedge: {msedgedriverVersion: 107.0.1418.42 (5ed2a3ace08d..., userDataDir: C:\Users\JAYSHR~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c61e199c3b664fe6a01e81d69ca89c4
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -603,15 +1415,15 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyColourOfProduct -->
-        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:TestNGpack.VerifyProductDetailspage@31304f14]" started-at="2022-11-16T13:53:14 IST" name="logoutApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668586994237" status="SKIP">
+        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:TestNGpack.VerifyProductDetailspage@31304f14]" started-at="2022-11-16T14:05:34 IST" name="logoutApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587734089" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutApplication -->
-        <test-method is-config="true" signature="clearAll()[pri:0, instance:TestNGpack.VerifyProductDetailspage@31304f14]" started-at="2022-11-16T13:53:14 IST" name="clearAll" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668586994241" status="SKIP">
+        <test-method is-config="true" signature="clearAll()[pri:0, instance:TestNGpack.VerifyProductDetailspage@31304f14]" started-at="2022-11-16T14:05:34 IST" name="clearAll" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587734097" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearAll -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNGpack.VerifyProductDetailspage@31304f14]" started-at="2022-11-16T13:53:14 IST" name="closeBrowser" finished-at="2022-11-16T13:53:14 IST" duration-ms="108" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNGpack.VerifyProductDetailspage@31304f14]" started-at="2022-11-16T14:05:34 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668587734536" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

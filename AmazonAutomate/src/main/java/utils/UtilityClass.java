@@ -21,11 +21,11 @@ public class UtilityClass {
 	Date dateRef=new Date();
 	SimpleDateFormat sdf=new SimpleDateFormat("DD-MM-YYYY hh mm ss");
 	sdf.format(dateRef);
-	File drc=new File("E:\\Daily classes\\New folder\\Test-"+TestId+sdf.format(dateRef)+".png");
+	File drc=new File("test-output//testScreenshots//Test-"+TestId+sdf.format(dateRef)+".png");
 	FileHandler.copy(capturescreen, drc);
 	}
 	public static String getDataFormExelSheet(String s, int r,int c) throws EncryptedDocumentException, IOException {
-		File file=new File ("C:\\Users\\JAYSHRI WASEKAR\\Desktop\\Book1.xlsx");
+		File file=new File ("src//test//resource//browsers//testData//Book1.xlsx");
 		Cell expectedCell=WorkbookFactory.create(file).getSheet(s).getRow(r).getCell(c);
 		String cellValue="";
 		
