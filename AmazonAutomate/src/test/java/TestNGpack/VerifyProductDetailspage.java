@@ -16,6 +16,10 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
 import Pages.HomePage;
 import Pages.ProductDisplayPage;
 import setup.Base;
@@ -27,10 +31,17 @@ public class VerifyProductDetailspage extends Base {
 	private ProductDisplayPage productDisplayPage;
 	private ArrayList<String>addr;
 	
+	int testId;
+	static ExtentTest test;
+	static ExtentHtmlReporter reporter;
+	
 @Parameters("browser")
 @BeforeTest
 	public void launchBrowser(String browsername)
 	{
+	  reporter = new ExtentHtmlReporter ("test-output/ExtendReporter/Extent.html");
+	  ExtentReports extend = new ExtentReports();
+	  extend.attachReporter(reporter);
 		if(browsername.equals("Chrome"))
 		{
 			 driver=openChromeBrowser();
