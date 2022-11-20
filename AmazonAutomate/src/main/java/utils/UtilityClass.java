@@ -21,7 +21,7 @@ public class UtilityClass {
 	Date dateRef=new Date();
 	SimpleDateFormat sdf=new SimpleDateFormat("DD-MM-YYYY hh mm ss");
 	sdf.format(dateRef);
-	File drc=new File("test-output//testScreenshots"+TestId+sdf.format(dateRef)+".png");
+	File drc=new File("test-output//testScreenshots//Test-"+TestId+sdf.format(dateRef)+".png");
 	FileHandler.copy(capturescreen, drc);
 	}
 	public static String getDataFormExelSheet(String s, int r,int c) throws EncryptedDocumentException, IOException {
