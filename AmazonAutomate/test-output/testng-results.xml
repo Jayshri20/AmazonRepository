@@ -2,12 +2,136 @@
 <testng-results ignored="0" total="16" passed="0" failed="0" skipped="16">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-16T16:06:44 IST" name="Failed suite [RegressionTest]" finished-at="2022-11-16T16:06:44 IST" duration-ms="449">
+  <suite started-at="2022-11-18T22:15:28 IST" name="RegressionTest" finished-at="2022-11-18T22:15:28 IST" duration-ms="364">
     <groups>
     </groups>
-    <test started-at="2022-11-16T16:06:44 IST" name="ChromeTest(failed)" finished-at="2022-11-16T16:06:44 IST" duration-ms="304">
+    <test started-at="2022-11-18T22:15:28 IST" name="ChromeTest" finished-at="2022-11-18T22:15:28 IST" duration-ms="252">
+      <class name="TestNGpack.VerifyHomePage">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestNGpack.VerifyHomePage@478190fc]" started-at="2022-11-18T22:15:28 IST" name="launchBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928356" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TestNGpack.VerifyHomePage@478190fc]" started-at="2022-11-18T22:15:28 IST" name="createPOMObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928379" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPOMObjects -->
+        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyHomePage@478190fc]" started-at="2022-11-18T22:15:28 IST" name="openAmazonHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928392" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAmazonHomePage -->
+        <test-method signature="verifyhomepage()[pri:1, instance:TestNGpack.VerifyHomePage@478190fc]" started-at="2022-11-18T22:15:28 IST" name="verifyhomepage" finished-at="2022-11-18T22:15:28 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\chromedriver.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\chromedriver.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at setup.Base.openChromeBrowser(Base.java:13)
+at TestNGpack.VerifyAddToCardButton.launchBrowser(VerifyAddToCardButton.java:45)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyhomepage -->
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:TestNGpack.VerifyHomePage@478190fc]" started-at="2022-11-18T22:15:28 IST" name="logoutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928398" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApplication -->
+        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyHomePage@478190fc]" started-at="2022-11-18T22:15:28 IST" name="openAmazonHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928400" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAmazonHomePage -->
+        <test-method signature="verifySearchBar()[pri:2, instance:TestNGpack.VerifyHomePage@478190fc]" started-at="2022-11-18T22:15:28 IST" name="verifySearchBar" finished-at="2022-11-18T22:15:28 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\chromedriver.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\chromedriver.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at setup.Base.openChromeBrowser(Base.java:13)
+at TestNGpack.VerifyAddToCardButton.launchBrowser(VerifyAddToCardButton.java:45)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchBar -->
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:TestNGpack.VerifyHomePage@478190fc]" started-at="2022-11-18T22:15:28 IST" name="logoutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928407" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApplication -->
+        <test-method is-config="true" signature="clearAll()[pri:0, instance:TestNGpack.VerifyHomePage@478190fc]" started-at="2022-11-18T22:15:28 IST" name="clearAll" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928409" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearAll -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNGpack.VerifyHomePage@478190fc]" started-at="2022-11-18T22:15:28 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928419" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TestNGpack.VerifyHomePage -->
       <class name="TestNGpack.VerifyAddToCardButton">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestNGpack.VerifyAddToCardButton@595b007d]" started-at="2022-11-16T16:06:44 IST" name="launchBrowser" finished-at="2022-11-16T16:06:44 IST" duration-ms="205" status="FAIL">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestNGpack.VerifyAddToCardButton@6ae5aa72]" started-at="2022-11-18T22:15:28 IST" name="launchBrowser" finished-at="2022-11-18T22:15:28 IST" duration-ms="172" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -17,10 +141,10 @@
           </params>
           <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\chromedriver.exe]]>
+              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\chromedriver.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\chromedriver.exe
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\chromedriver.exe
 at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
 at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
 at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
@@ -59,21 +183,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TestNGpack.VerifyAddToCardButton@595b007d]" started-at="2022-11-16T16:06:44 IST" name="createPOMObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004557" status="SKIP">
+        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TestNGpack.VerifyAddToCardButton@6ae5aa72]" started-at="2022-11-18T22:15:28 IST" name="createPOMObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928379" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPOMObjects -->
-        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyAddToCardButton@595b007d]" started-at="2022-11-16T16:06:44 IST" name="openAmazonHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004571" status="SKIP">
+        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyAddToCardButton@6ae5aa72]" started-at="2022-11-18T22:15:28 IST" name="openAmazonHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928392" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openAmazonHomePage -->
-        <test-method signature="verifySearchBar()[pri:1, instance:TestNGpack.VerifyAddToCardButton@595b007d]" started-at="2022-11-16T16:06:44 IST" name="verifySearchBar" finished-at="2022-11-16T16:06:44 IST" duration-ms="0" status="SKIP">
+        <test-method signature="verifySearchBar()[pri:1, instance:TestNGpack.VerifyAddToCardButton@6ae5aa72]" started-at="2022-11-18T22:15:28 IST" name="verifySearchBar" finished-at="2022-11-18T22:15:28 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\chromedriver.exe]]>
+              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\chromedriver.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\chromedriver.exe
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\chromedriver.exe
 at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
 at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
 at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
@@ -112,21 +236,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchBar -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:TestNGpack.VerifyAddToCardButton@595b007d]" started-at="2022-11-16T16:06:44 IST" name="logOutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004578" status="SKIP">
+        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:TestNGpack.VerifyAddToCardButton@6ae5aa72]" started-at="2022-11-18T22:15:28 IST" name="logOutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928399" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyAddToCardButton@595b007d]" started-at="2022-11-16T16:06:44 IST" name="openAmazonHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004582" status="SKIP">
+        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyAddToCardButton@6ae5aa72]" started-at="2022-11-18T22:15:28 IST" name="openAmazonHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928402" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openAmazonHomePage -->
-        <test-method signature="verifyAddToCardButton()[pri:2, instance:TestNGpack.VerifyAddToCardButton@595b007d]" started-at="2022-11-16T16:06:44 IST" name="verifyAddToCardButton" finished-at="2022-11-16T16:06:44 IST" duration-ms="0" status="SKIP">
+        <test-method signature="verifyAddToCardButton()[pri:2, instance:TestNGpack.VerifyAddToCardButton@6ae5aa72]" started-at="2022-11-18T22:15:28 IST" name="verifyAddToCardButton" finished-at="2022-11-18T22:15:28 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\chromedriver.exe]]>
+              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\chromedriver.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\chromedriver.exe
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\chromedriver.exe
 at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
 at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
 at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
@@ -165,21 +289,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddToCardButton -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:TestNGpack.VerifyAddToCardButton@595b007d]" started-at="2022-11-16T16:06:44 IST" name="logOutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004589" status="SKIP">
+        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:TestNGpack.VerifyAddToCardButton@6ae5aa72]" started-at="2022-11-18T22:15:28 IST" name="logOutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928410" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyAddToCardButton@595b007d]" started-at="2022-11-16T16:06:44 IST" name="openAmazonHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004591" status="SKIP">
+        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyAddToCardButton@6ae5aa72]" started-at="2022-11-18T22:15:28 IST" name="openAmazonHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928412" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openAmazonHomePage -->
-        <test-method signature="logOutFromApplication()[pri:3, instance:TestNGpack.VerifyAddToCardButton@595b007d]" started-at="2022-11-16T16:06:44 IST" name="logOutFromApplication" finished-at="2022-11-16T16:06:44 IST" duration-ms="0" status="SKIP">
+        <test-method signature="logOutFromApplication()[pri:3, instance:TestNGpack.VerifyAddToCardButton@6ae5aa72]" started-at="2022-11-18T22:15:28 IST" name="logOutFromApplication" finished-at="2022-11-18T22:15:28 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\chromedriver.exe]]>
+              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\chromedriver.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\chromedriver.exe
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\chromedriver.exe
 at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
 at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
 at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
@@ -218,163 +342,39 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:TestNGpack.VerifyAddToCardButton@595b007d]" started-at="2022-11-16T16:06:44 IST" name="logOutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004599" status="SKIP">
+        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:TestNGpack.VerifyAddToCardButton@6ae5aa72]" started-at="2022-11-18T22:15:28 IST" name="logOutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928416" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="clearAll()[pri:0, instance:TestNGpack.VerifyAddToCardButton@595b007d]" started-at="2022-11-16T16:06:44 IST" name="clearAll" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004601" status="SKIP">
+        <test-method is-config="true" signature="clearAll()[pri:0, instance:TestNGpack.VerifyAddToCardButton@6ae5aa72]" started-at="2022-11-18T22:15:28 IST" name="clearAll" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928417" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearAll -->
-        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:TestNGpack.VerifyAddToCardButton@595b007d]" started-at="2022-11-16T16:06:44 IST" name="closeTheBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004607" status="SKIP">
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:TestNGpack.VerifyAddToCardButton@6ae5aa72]" started-at="2022-11-18T22:15:28 IST" name="closeTheBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928419" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTheBrowser -->
       </class> <!-- TestNGpack.VerifyAddToCardButton -->
-      <class name="TestNGpack.VerifyHomePage">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestNGpack.VerifyHomePage@7e07db1f]" started-at="2022-11-16T16:06:44 IST" name="launchBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004529" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TestNGpack.VerifyHomePage@7e07db1f]" started-at="2022-11-16T16:06:44 IST" name="createPOMObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004557" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createPOMObjects -->
-        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyHomePage@7e07db1f]" started-at="2022-11-16T16:06:44 IST" name="openAmazonHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004571" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openAmazonHomePage -->
-        <test-method signature="verifyhomepage()[pri:1, instance:TestNGpack.VerifyHomePage@7e07db1f]" started-at="2022-11-16T16:06:44 IST" name="verifyhomepage" finished-at="2022-11-16T16:06:44 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\chromedriver.exe]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\chromedriver.exe
-at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
-at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-at setup.Base.openChromeBrowser(Base.java:13)
-at TestNGpack.VerifyAddToCardButton.launchBrowser(VerifyAddToCardButton.java:45)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-at org.testng.TestRunner.run(TestRunner.java:589)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyhomepage -->
-        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:TestNGpack.VerifyHomePage@7e07db1f]" started-at="2022-11-16T16:06:44 IST" name="logoutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004582" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutFromApplication -->
-        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyHomePage@7e07db1f]" started-at="2022-11-16T16:06:44 IST" name="openAmazonHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004586" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openAmazonHomePage -->
-        <test-method signature="verifySearchBar()[pri:2, instance:TestNGpack.VerifyHomePage@7e07db1f]" started-at="2022-11-16T16:06:44 IST" name="verifySearchBar" finished-at="2022-11-16T16:06:44 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\chromedriver.exe]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\chromedriver.exe
-at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
-at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-at setup.Base.openChromeBrowser(Base.java:13)
-at TestNGpack.VerifyAddToCardButton.launchBrowser(VerifyAddToCardButton.java:45)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-at org.testng.TestRunner.run(TestRunner.java:589)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchBar -->
-        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:TestNGpack.VerifyHomePage@7e07db1f]" started-at="2022-11-16T16:06:44 IST" name="logoutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004593" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutFromApplication -->
-        <test-method is-config="true" signature="clearAll()[pri:0, instance:TestNGpack.VerifyHomePage@7e07db1f]" started-at="2022-11-16T16:06:44 IST" name="clearAll" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004595" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clearAll -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNGpack.VerifyHomePage@7e07db1f]" started-at="2022-11-16T16:06:44 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004607" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- TestNGpack.VerifyHomePage -->
       <class name="TestNGpack.VerifyProductDetailspage">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestNGpack.VerifyProductDetailspage@1189dd52]" started-at="2022-11-16T16:06:44 IST" name="launchBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004530" status="SKIP">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestNGpack.VerifyProductDetailspage@38c6f217]" started-at="2022-11-18T22:15:28 IST" name="launchBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928357" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TestNGpack.VerifyProductDetailspage@1189dd52]" started-at="2022-11-16T16:06:44 IST" name="createPOMObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004557" status="SKIP">
+        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TestNGpack.VerifyProductDetailspage@38c6f217]" started-at="2022-11-18T22:15:28 IST" name="createPOMObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928379" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPOMObjects -->
-        <test-method is-config="true" signature="openAmazoneHomePage()[pri:0, instance:TestNGpack.VerifyProductDetailspage@1189dd52]" started-at="2022-11-16T16:06:44 IST" name="openAmazoneHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004571" status="SKIP">
+        <test-method is-config="true" signature="openAmazoneHomePage()[pri:0, instance:TestNGpack.VerifyProductDetailspage@38c6f217]" started-at="2022-11-18T22:15:28 IST" name="openAmazoneHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928392" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openAmazoneHomePage -->
-        <test-method signature="vefiySearchBarButton()[pri:1, instance:TestNGpack.VerifyProductDetailspage@1189dd52]" started-at="2022-11-16T16:06:44 IST" name="vefiySearchBarButton" finished-at="2022-11-16T16:06:44 IST" duration-ms="0" status="SKIP">
+        <test-method signature="vefiySearchBarButton()[pri:1, instance:TestNGpack.VerifyProductDetailspage@38c6f217]" started-at="2022-11-18T22:15:28 IST" name="vefiySearchBarButton" finished-at="2022-11-18T22:15:28 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\chromedriver.exe]]>
+              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\chromedriver.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\chromedriver.exe
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\chromedriver.exe
 at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
 at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
 at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
@@ -413,21 +413,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vefiySearchBarButton -->
-        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:TestNGpack.VerifyProductDetailspage@1189dd52]" started-at="2022-11-16T16:06:44 IST" name="logoutApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004579" status="SKIP">
+        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:TestNGpack.VerifyProductDetailspage@38c6f217]" started-at="2022-11-18T22:15:28 IST" name="logoutApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928398" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutApplication -->
-        <test-method is-config="true" signature="openAmazoneHomePage()[pri:0, instance:TestNGpack.VerifyProductDetailspage@1189dd52]" started-at="2022-11-16T16:06:44 IST" name="openAmazoneHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004584" status="SKIP">
+        <test-method is-config="true" signature="openAmazoneHomePage()[pri:0, instance:TestNGpack.VerifyProductDetailspage@38c6f217]" started-at="2022-11-18T22:15:28 IST" name="openAmazoneHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928401" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openAmazoneHomePage -->
-        <test-method signature="verifyProductDitails()[pri:2, instance:TestNGpack.VerifyProductDetailspage@1189dd52]" started-at="2022-11-16T16:06:44 IST" name="verifyProductDitails" finished-at="2022-11-16T16:06:44 IST" duration-ms="0" status="SKIP">
+        <test-method signature="verifyProductDitails()[pri:2, instance:TestNGpack.VerifyProductDetailspage@38c6f217]" started-at="2022-11-18T22:15:28 IST" name="verifyProductDitails" finished-at="2022-11-18T22:15:28 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\chromedriver.exe]]>
+              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\chromedriver.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\chromedriver.exe
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\chromedriver.exe
 at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
 at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
 at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
@@ -466,21 +466,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductDitails -->
-        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:TestNGpack.VerifyProductDetailspage@1189dd52]" started-at="2022-11-16T16:06:44 IST" name="logoutApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004595" status="SKIP">
+        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:TestNGpack.VerifyProductDetailspage@38c6f217]" started-at="2022-11-18T22:15:28 IST" name="logoutApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928409" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutApplication -->
-        <test-method is-config="true" signature="openAmazoneHomePage()[pri:0, instance:TestNGpack.VerifyProductDetailspage@1189dd52]" started-at="2022-11-16T16:06:44 IST" name="openAmazoneHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004598" status="SKIP">
+        <test-method is-config="true" signature="openAmazoneHomePage()[pri:0, instance:TestNGpack.VerifyProductDetailspage@38c6f217]" started-at="2022-11-18T22:15:28 IST" name="openAmazoneHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928411" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openAmazoneHomePage -->
-        <test-method signature="verifyColourOfProduct()[pri:3, instance:TestNGpack.VerifyProductDetailspage@1189dd52]" started-at="2022-11-16T16:06:44 IST" name="verifyColourOfProduct" finished-at="2022-11-16T16:06:44 IST" duration-ms="0" status="SKIP">
+        <test-method signature="verifyColourOfProduct()[pri:3, instance:TestNGpack.VerifyProductDetailspage@38c6f217]" started-at="2022-11-18T22:15:28 IST" name="verifyColourOfProduct" finished-at="2022-11-18T22:15:28 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\chromedriver.exe]]>
+              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\chromedriver.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\chromedriver.exe
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\chromedriver.exe
 at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
 at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
 at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
@@ -519,41 +519,41 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyColourOfProduct -->
-        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:TestNGpack.VerifyProductDetailspage@1189dd52]" started-at="2022-11-16T16:06:44 IST" name="logoutApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004604" status="SKIP">
+        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:TestNGpack.VerifyProductDetailspage@38c6f217]" started-at="2022-11-18T22:15:28 IST" name="logoutApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928415" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutApplication -->
-        <test-method is-config="true" signature="clearAll()[pri:0, instance:TestNGpack.VerifyProductDetailspage@1189dd52]" started-at="2022-11-16T16:06:44 IST" name="clearAll" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004605" status="SKIP">
+        <test-method is-config="true" signature="clearAll()[pri:0, instance:TestNGpack.VerifyProductDetailspage@38c6f217]" started-at="2022-11-18T22:15:28 IST" name="clearAll" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928416" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearAll -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNGpack.VerifyProductDetailspage@1189dd52]" started-at="2022-11-16T16:06:44 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004608" status="SKIP">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNGpack.VerifyProductDetailspage@38c6f217]" started-at="2022-11-18T22:15:28 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928420" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- TestNGpack.VerifyProductDetailspage -->
-    </test> <!-- ChromeTest(failed) -->
-    <test started-at="2022-11-16T16:06:44 IST" name="EdgeTest(failed)" finished-at="2022-11-16T16:06:44 IST" duration-ms="76">
+    </test> <!-- ChromeTest -->
+    <test started-at="2022-11-18T22:15:28 IST" name="EdgeTest" finished-at="2022-11-18T22:15:28 IST" duration-ms="53">
       <class name="TestNGpack.VerifyHomePage">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestNGpack.VerifyHomePage@7cc0cdad]" started-at="2022-11-16T16:06:44 IST" name="launchBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004690" status="SKIP">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestNGpack.VerifyHomePage@5c6648b0]" started-at="2022-11-18T22:15:28 IST" name="launchBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928489" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TestNGpack.VerifyHomePage@7cc0cdad]" started-at="2022-11-16T16:06:44 IST" name="createPOMObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004695" status="SKIP">
+        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TestNGpack.VerifyHomePage@5c6648b0]" started-at="2022-11-18T22:15:28 IST" name="createPOMObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928493" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPOMObjects -->
-        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyHomePage@7cc0cdad]" started-at="2022-11-16T16:06:44 IST" name="openAmazonHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004699" status="SKIP">
+        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyHomePage@5c6648b0]" started-at="2022-11-18T22:15:28 IST" name="openAmazonHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928496" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openAmazonHomePage -->
-        <test-method signature="verifyhomepage()[pri:1, instance:TestNGpack.VerifyHomePage@7cc0cdad]" started-at="2022-11-16T16:06:44 IST" name="verifyhomepage" finished-at="2022-11-16T16:06:44 IST" duration-ms="0" status="SKIP">
+        <test-method signature="verifyhomepage()[pri:1, instance:TestNGpack.VerifyHomePage@5c6648b0]" started-at="2022-11-18T22:15:28 IST" name="verifyhomepage" finished-at="2022-11-18T22:15:28 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\msedgedriver.exe]]>
+              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\msedgedriver.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\msedgedriver.exe
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\msedgedriver.exe
 at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
 at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
 at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
@@ -592,21 +592,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyhomepage -->
-        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:TestNGpack.VerifyHomePage@7cc0cdad]" started-at="2022-11-16T16:06:44 IST" name="logoutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004720" status="SKIP">
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:TestNGpack.VerifyHomePage@5c6648b0]" started-at="2022-11-18T22:15:28 IST" name="logoutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928507" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromApplication -->
-        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyHomePage@7cc0cdad]" started-at="2022-11-16T16:06:44 IST" name="openAmazonHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004725" status="SKIP">
+        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyHomePage@5c6648b0]" started-at="2022-11-18T22:15:28 IST" name="openAmazonHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928512" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openAmazonHomePage -->
-        <test-method signature="verifySearchBar()[pri:2, instance:TestNGpack.VerifyHomePage@7cc0cdad]" started-at="2022-11-16T16:06:44 IST" name="verifySearchBar" finished-at="2022-11-16T16:06:44 IST" duration-ms="0" status="SKIP">
+        <test-method signature="verifySearchBar()[pri:2, instance:TestNGpack.VerifyHomePage@5c6648b0]" started-at="2022-11-18T22:15:28 IST" name="verifySearchBar" finished-at="2022-11-18T22:15:28 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\msedgedriver.exe]]>
+              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\msedgedriver.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\msedgedriver.exe
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\msedgedriver.exe
 at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
 at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
 at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
@@ -645,21 +645,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchBar -->
-        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:TestNGpack.VerifyHomePage@7cc0cdad]" started-at="2022-11-16T16:06:44 IST" name="logoutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004734" status="SKIP">
+        <test-method is-config="true" signature="logoutFromApplication()[pri:0, instance:TestNGpack.VerifyHomePage@5c6648b0]" started-at="2022-11-18T22:15:28 IST" name="logoutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928519" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromApplication -->
-        <test-method is-config="true" signature="clearAll()[pri:0, instance:TestNGpack.VerifyHomePage@7cc0cdad]" started-at="2022-11-16T16:06:44 IST" name="clearAll" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004743" status="SKIP">
+        <test-method is-config="true" signature="clearAll()[pri:0, instance:TestNGpack.VerifyHomePage@5c6648b0]" started-at="2022-11-18T22:15:28 IST" name="clearAll" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928522" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearAll -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNGpack.VerifyHomePage@7cc0cdad]" started-at="2022-11-16T16:06:44 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004755" status="SKIP">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNGpack.VerifyHomePage@5c6648b0]" started-at="2022-11-18T22:15:28 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928531" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- TestNGpack.VerifyHomePage -->
       <class name="TestNGpack.VerifyAddToCardButton">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestNGpack.VerifyAddToCardButton@128d2484]" started-at="2022-11-16T16:06:44 IST" name="launchBrowser" finished-at="2022-11-16T16:06:44 IST" duration-ms="7" status="FAIL">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestNGpack.VerifyAddToCardButton@34a3d150]" started-at="2022-11-18T22:15:28 IST" name="launchBrowser" finished-at="2022-11-18T22:15:28 IST" duration-ms="5" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -669,10 +669,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </params>
           <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\msedgedriver.exe]]>
+              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\msedgedriver.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\msedgedriver.exe
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\msedgedriver.exe
 at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
 at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
 at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
@@ -711,21 +711,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TestNGpack.VerifyAddToCardButton@128d2484]" started-at="2022-11-16T16:06:44 IST" name="createPOMObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004695" status="SKIP">
+        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TestNGpack.VerifyAddToCardButton@34a3d150]" started-at="2022-11-18T22:15:28 IST" name="createPOMObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928493" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPOMObjects -->
-        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyAddToCardButton@128d2484]" started-at="2022-11-16T16:06:44 IST" name="openAmazonHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004700" status="SKIP">
+        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyAddToCardButton@34a3d150]" started-at="2022-11-18T22:15:28 IST" name="openAmazonHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928497" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openAmazonHomePage -->
-        <test-method signature="verifySearchBar()[pri:1, instance:TestNGpack.VerifyAddToCardButton@128d2484]" started-at="2022-11-16T16:06:44 IST" name="verifySearchBar" finished-at="2022-11-16T16:06:44 IST" duration-ms="0" status="SKIP">
+        <test-method signature="verifySearchBar()[pri:1, instance:TestNGpack.VerifyAddToCardButton@34a3d150]" started-at="2022-11-18T22:15:28 IST" name="verifySearchBar" finished-at="2022-11-18T22:15:28 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\msedgedriver.exe]]>
+              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\msedgedriver.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\msedgedriver.exe
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\msedgedriver.exe
 at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
 at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
 at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
@@ -764,21 +764,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchBar -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:TestNGpack.VerifyAddToCardButton@128d2484]" started-at="2022-11-16T16:06:44 IST" name="logOutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004714" status="SKIP">
+        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:TestNGpack.VerifyAddToCardButton@34a3d150]" started-at="2022-11-18T22:15:28 IST" name="logOutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928508" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyAddToCardButton@128d2484]" started-at="2022-11-16T16:06:44 IST" name="openAmazonHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004718" status="SKIP">
+        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyAddToCardButton@34a3d150]" started-at="2022-11-18T22:15:28 IST" name="openAmazonHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928513" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openAmazonHomePage -->
-        <test-method signature="verifyAddToCardButton()[pri:2, instance:TestNGpack.VerifyAddToCardButton@128d2484]" started-at="2022-11-16T16:06:44 IST" name="verifyAddToCardButton" finished-at="2022-11-16T16:06:44 IST" duration-ms="0" status="SKIP">
+        <test-method signature="verifyAddToCardButton()[pri:2, instance:TestNGpack.VerifyAddToCardButton@34a3d150]" started-at="2022-11-18T22:15:28 IST" name="verifyAddToCardButton" finished-at="2022-11-18T22:15:28 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\msedgedriver.exe]]>
+              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\msedgedriver.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\msedgedriver.exe
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\msedgedriver.exe
 at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
 at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
 at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
@@ -817,21 +817,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddToCardButton -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:TestNGpack.VerifyAddToCardButton@128d2484]" started-at="2022-11-16T16:06:44 IST" name="logOutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004725" status="SKIP">
+        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:TestNGpack.VerifyAddToCardButton@34a3d150]" started-at="2022-11-18T22:15:28 IST" name="logOutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928520" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyAddToCardButton@128d2484]" started-at="2022-11-16T16:06:44 IST" name="openAmazonHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004727" status="SKIP">
+        <test-method is-config="true" signature="openAmazonHomePage()[pri:0, instance:TestNGpack.VerifyAddToCardButton@34a3d150]" started-at="2022-11-18T22:15:28 IST" name="openAmazonHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928522" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openAmazonHomePage -->
-        <test-method signature="logOutFromApplication()[pri:3, instance:TestNGpack.VerifyAddToCardButton@128d2484]" started-at="2022-11-16T16:06:44 IST" name="logOutFromApplication" finished-at="2022-11-16T16:06:44 IST" duration-ms="0" status="SKIP">
+        <test-method signature="logOutFromApplication()[pri:3, instance:TestNGpack.VerifyAddToCardButton@34a3d150]" started-at="2022-11-18T22:15:28 IST" name="logOutFromApplication" finished-at="2022-11-18T22:15:28 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\msedgedriver.exe]]>
+              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\msedgedriver.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\msedgedriver.exe
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\msedgedriver.exe
 at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
 at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
 at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
@@ -870,39 +870,39 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:TestNGpack.VerifyAddToCardButton@128d2484]" started-at="2022-11-16T16:06:44 IST" name="logOutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004731" status="SKIP">
+        <test-method is-config="true" signature="logOutFromApplication()[pri:0, instance:TestNGpack.VerifyAddToCardButton@34a3d150]" started-at="2022-11-18T22:15:28 IST" name="logOutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928526" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOutFromApplication -->
-        <test-method is-config="true" signature="clearAll()[pri:0, instance:TestNGpack.VerifyAddToCardButton@128d2484]" started-at="2022-11-16T16:06:44 IST" name="clearAll" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004736" status="SKIP">
+        <test-method is-config="true" signature="clearAll()[pri:0, instance:TestNGpack.VerifyAddToCardButton@34a3d150]" started-at="2022-11-18T22:15:28 IST" name="clearAll" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928527" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearAll -->
-        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:TestNGpack.VerifyAddToCardButton@128d2484]" started-at="2022-11-16T16:06:44 IST" name="closeTheBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004753" status="SKIP">
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:TestNGpack.VerifyAddToCardButton@34a3d150]" started-at="2022-11-18T22:15:28 IST" name="closeTheBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928529" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTheBrowser -->
       </class> <!-- TestNGpack.VerifyAddToCardButton -->
       <class name="TestNGpack.VerifyProductDetailspage">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestNGpack.VerifyProductDetailspage@7c7b252e]" started-at="2022-11-16T16:06:44 IST" name="launchBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004691" status="SKIP">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestNGpack.VerifyProductDetailspage@2a4fb17b]" started-at="2022-11-18T22:15:28 IST" name="launchBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928490" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TestNGpack.VerifyProductDetailspage@7c7b252e]" started-at="2022-11-16T16:06:44 IST" name="createPOMObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004694" status="SKIP">
+        <test-method is-config="true" signature="createPOMObjects()[pri:0, instance:TestNGpack.VerifyProductDetailspage@2a4fb17b]" started-at="2022-11-18T22:15:28 IST" name="createPOMObjects" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928493" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPOMObjects -->
-        <test-method is-config="true" signature="openAmazoneHomePage()[pri:0, instance:TestNGpack.VerifyProductDetailspage@7c7b252e]" started-at="2022-11-16T16:06:44 IST" name="openAmazoneHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004696" status="SKIP">
+        <test-method is-config="true" signature="openAmazoneHomePage()[pri:0, instance:TestNGpack.VerifyProductDetailspage@2a4fb17b]" started-at="2022-11-18T22:15:28 IST" name="openAmazoneHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928496" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openAmazoneHomePage -->
-        <test-method signature="vefiySearchBarButton()[pri:1, instance:TestNGpack.VerifyProductDetailspage@7c7b252e]" started-at="2022-11-16T16:06:44 IST" name="vefiySearchBarButton" finished-at="2022-11-16T16:06:44 IST" duration-ms="0" status="SKIP">
+        <test-method signature="vefiySearchBarButton()[pri:1, instance:TestNGpack.VerifyProductDetailspage@2a4fb17b]" started-at="2022-11-18T22:15:28 IST" name="vefiySearchBarButton" finished-at="2022-11-18T22:15:28 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\msedgedriver.exe]]>
+              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\msedgedriver.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\msedgedriver.exe
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\msedgedriver.exe
 at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
 at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
 at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
@@ -941,21 +941,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- vefiySearchBarButton -->
-        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:TestNGpack.VerifyProductDetailspage@7c7b252e]" started-at="2022-11-16T16:06:44 IST" name="logoutApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004714" status="SKIP">
+        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:TestNGpack.VerifyProductDetailspage@2a4fb17b]" started-at="2022-11-18T22:15:28 IST" name="logoutApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928500" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutApplication -->
-        <test-method is-config="true" signature="openAmazoneHomePage()[pri:0, instance:TestNGpack.VerifyProductDetailspage@7c7b252e]" started-at="2022-11-16T16:06:44 IST" name="openAmazoneHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004722" status="SKIP">
+        <test-method is-config="true" signature="openAmazoneHomePage()[pri:0, instance:TestNGpack.VerifyProductDetailspage@2a4fb17b]" started-at="2022-11-18T22:15:28 IST" name="openAmazoneHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928505" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openAmazoneHomePage -->
-        <test-method signature="verifyProductDitails()[pri:2, instance:TestNGpack.VerifyProductDetailspage@7c7b252e]" started-at="2022-11-16T16:06:44 IST" name="verifyProductDitails" finished-at="2022-11-16T16:06:44 IST" duration-ms="0" status="SKIP">
+        <test-method signature="verifyProductDitails()[pri:2, instance:TestNGpack.VerifyProductDetailspage@2a4fb17b]" started-at="2022-11-18T22:15:28 IST" name="verifyProductDitails" finished-at="2022-11-18T22:15:28 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\msedgedriver.exe]]>
+              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\msedgedriver.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\msedgedriver.exe
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\msedgedriver.exe
 at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
 at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
 at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
@@ -994,21 +994,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductDitails -->
-        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:TestNGpack.VerifyProductDetailspage@7c7b252e]" started-at="2022-11-16T16:06:44 IST" name="logoutApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004730" status="SKIP">
+        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:TestNGpack.VerifyProductDetailspage@2a4fb17b]" started-at="2022-11-18T22:15:28 IST" name="logoutApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928510" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutApplication -->
-        <test-method is-config="true" signature="openAmazoneHomePage()[pri:0, instance:TestNGpack.VerifyProductDetailspage@7c7b252e]" started-at="2022-11-16T16:06:44 IST" name="openAmazoneHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004740" status="SKIP">
+        <test-method is-config="true" signature="openAmazoneHomePage()[pri:0, instance:TestNGpack.VerifyProductDetailspage@2a4fb17b]" started-at="2022-11-18T22:15:28 IST" name="openAmazoneHomePage" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928513" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openAmazoneHomePage -->
-        <test-method signature="verifyColourOfProduct()[pri:3, instance:TestNGpack.VerifyProductDetailspage@7c7b252e]" started-at="2022-11-16T16:06:44 IST" name="verifyColourOfProduct" finished-at="2022-11-16T16:06:44 IST" duration-ms="0" status="SKIP">
+        <test-method signature="verifyColourOfProduct()[pri:3, instance:TestNGpack.VerifyProductDetailspage@2a4fb17b]" started-at="2022-11-18T22:15:28 IST" name="verifyColourOfProduct" finished-at="2022-11-18T22:15:28 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\msedgedriver.exe]]>
+              <![CDATA[The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\msedgedriver.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resource\browsers\msedgedriver.exe
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\msedgedriver.exe
 at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
 at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
 at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
@@ -1047,19 +1047,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyColourOfProduct -->
-        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:TestNGpack.VerifyProductDetailspage@7c7b252e]" started-at="2022-11-16T16:06:44 IST" name="logoutApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004748" status="SKIP">
+        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:TestNGpack.VerifyProductDetailspage@2a4fb17b]" started-at="2022-11-18T22:15:28 IST" name="logoutApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928516" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutApplication -->
-        <test-method is-config="true" signature="clearAll()[pri:0, instance:TestNGpack.VerifyProductDetailspage@7c7b252e]" started-at="2022-11-16T16:06:44 IST" name="clearAll" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004750" status="SKIP">
+        <test-method is-config="true" signature="clearAll()[pri:0, instance:TestNGpack.VerifyProductDetailspage@2a4fb17b]" started-at="2022-11-18T22:15:28 IST" name="clearAll" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928518" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearAll -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNGpack.VerifyProductDetailspage@7c7b252e]" started-at="2022-11-16T16:06:44 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668595004756" status="SKIP">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestNGpack.VerifyProductDetailspage@2a4fb17b]" started-at="2022-11-18T22:15:28 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1668789928532" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- TestNGpack.VerifyProductDetailspage -->
-    </test> <!-- EdgeTest(failed) -->
-  </suite> <!-- Failed suite [RegressionTest] -->
+    </test> <!-- EdgeTest -->
+  </suite> <!-- RegressionTest -->
 </testng-results>
