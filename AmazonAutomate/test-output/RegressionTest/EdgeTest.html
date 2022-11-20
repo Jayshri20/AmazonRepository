@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/8</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Nov 20 17:56:15 IST 2022</td>
+<td>Started on:</td><td>Sun Nov 20 18:02:12 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>20 seconds (20072 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (55 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,41 +76,26 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='TestNGpack.VerifyAddToCardButton.launchBrowser()'><b>launchBrowser</b><br>Test class: TestNGpack.VerifyAddToCardButton<br>Parameters: Edge</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-I18JAT8J&apos;, ip: &apos;192.168.87.188&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: driver.version: EdgeDriver
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\edgeBrowser
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
 	at setup.Base.openEdgeBrowser(Base.java:19)
 	at TestNGpack.VerifyAddToCardButton.launchBrowser(VerifyAddToCardButton.java:49)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:38009/status] to be available after 20001 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
-	... 31 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 32 more
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1753150176", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1753150176'><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-I18JAT8J&apos;, ip: &apos;192.168.87.188&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: driver.version: EdgeDriver
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace102174918", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace102174918'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\edgeBrowser
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
 	at setup.Base.openEdgeBrowser(Base.java:19)
 	at TestNGpack.VerifyAddToCardButton.launchBrowser(VerifyAddToCardButton.java:49)
@@ -136,17 +121,8 @@ Driver info: driver.version: EdgeDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:38009/status] to be available after 20001 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
-	... 31 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 32 more
 </pre></div></td>
-<td>20</td>
+<td>0</td>
 <td>TestNGpack.VerifyAddToCardButton@34a3d150</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
@@ -157,139 +133,139 @@ Caused by: java.util.concurrent.TimeoutException
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='TestNGpack.VerifyHomePage.logoutFromApplication()'><b>logoutFromApplication</b><br>Test class: TestNGpack.VerifyHomePage</td>
+<td></td>
+<td>-1668947532</td>
+<td>TestNGpack.VerifyHomePage@5c6648b0</td></tr>
+<tr>
+<td title='TestNGpack.VerifyHomePage.closeBrowser()'><b>closeBrowser</b><br>Test class: TestNGpack.VerifyHomePage</td>
+<td></td>
+<td>-1668947532</td>
+<td>TestNGpack.VerifyHomePage@5c6648b0</td></tr>
+<tr>
+<td title='TestNGpack.VerifyProductDetailspage.openAmazoneHomePage()'><b>openAmazoneHomePage</b><br>Test class: TestNGpack.VerifyProductDetailspage</td>
+<td></td>
+<td>-1668947532</td>
+<td>TestNGpack.VerifyProductDetailspage@2a4fb17b</td></tr>
+<tr>
+<td title='TestNGpack.VerifyHomePage.openAmazonHomePage()'><b>openAmazonHomePage</b><br>Test class: TestNGpack.VerifyHomePage</td>
+<td></td>
+<td>-1668947532</td>
+<td>TestNGpack.VerifyHomePage@5c6648b0</td></tr>
+<tr>
+<td title='TestNGpack.VerifyProductDetailspage.createPOMObjects()'><b>createPOMObjects</b><br>Test class: TestNGpack.VerifyProductDetailspage</td>
+<td></td>
+<td>-1668947532</td>
+<td>TestNGpack.VerifyProductDetailspage@2a4fb17b</td></tr>
+<tr>
+<td title='TestNGpack.VerifyAddToCardButton.logOutFromApplication()'><b>logOutFromApplication</b><br>Test class: TestNGpack.VerifyAddToCardButton</td>
+<td></td>
+<td>-1668947532</td>
+<td>TestNGpack.VerifyAddToCardButton@34a3d150</td></tr>
+<tr>
+<td title='TestNGpack.VerifyProductDetailspage.logoutApplication()'><b>logoutApplication</b><br>Test class: TestNGpack.VerifyProductDetailspage</td>
+<td></td>
+<td>-1668947532</td>
+<td>TestNGpack.VerifyProductDetailspage@2a4fb17b</td></tr>
+<tr>
+<td title='TestNGpack.VerifyHomePage.logoutFromApplication()'><b>logoutFromApplication</b><br>Test class: TestNGpack.VerifyHomePage</td>
+<td></td>
+<td>-1668947532</td>
+<td>TestNGpack.VerifyHomePage@5c6648b0</td></tr>
+<tr>
+<td title='TestNGpack.VerifyHomePage.clearAll()'><b>clearAll</b><br>Test class: TestNGpack.VerifyHomePage</td>
+<td></td>
+<td>-1668947532</td>
+<td>TestNGpack.VerifyHomePage@5c6648b0</td></tr>
+<tr>
+<td title='TestNGpack.VerifyAddToCardButton.openAmazonHomePage()'><b>openAmazonHomePage</b><br>Test class: TestNGpack.VerifyAddToCardButton</td>
+<td></td>
+<td>-1668947532</td>
+<td>TestNGpack.VerifyAddToCardButton@34a3d150</td></tr>
+<tr>
 <td title='TestNGpack.VerifyHomePage.launchBrowser()'><b>launchBrowser</b><br>Test class: TestNGpack.VerifyHomePage</td>
 <td></td>
-<td>-1668947195</td>
+<td>-1668947532</td>
+<td>TestNGpack.VerifyHomePage@5c6648b0</td></tr>
+<tr>
+<td title='TestNGpack.VerifyProductDetailspage.launchBrowser()'><b>launchBrowser</b><br>Test class: TestNGpack.VerifyProductDetailspage</td>
+<td></td>
+<td>-1668947532</td>
+<td>TestNGpack.VerifyProductDetailspage@2a4fb17b</td></tr>
+<tr>
+<td title='TestNGpack.VerifyHomePage.openAmazonHomePage()'><b>openAmazonHomePage</b><br>Test class: TestNGpack.VerifyHomePage</td>
+<td></td>
+<td>-1668947532</td>
 <td>TestNGpack.VerifyHomePage@5c6648b0</td></tr>
 <tr>
 <td title='TestNGpack.VerifyAddToCardButton.clearAll()'><b>clearAll</b><br>Test class: TestNGpack.VerifyAddToCardButton</td>
 <td></td>
-<td>-1668947195</td>
-<td>TestNGpack.VerifyAddToCardButton@34a3d150</td></tr>
-<tr>
-<td title='TestNGpack.VerifyHomePage.logoutFromApplication()'><b>logoutFromApplication</b><br>Test class: TestNGpack.VerifyHomePage</td>
-<td></td>
-<td>-1668947195</td>
-<td>TestNGpack.VerifyHomePage@5c6648b0</td></tr>
-<tr>
-<td title='TestNGpack.VerifyAddToCardButton.openAmazonHomePage()'><b>openAmazonHomePage</b><br>Test class: TestNGpack.VerifyAddToCardButton</td>
-<td></td>
-<td>-1668947195</td>
-<td>TestNGpack.VerifyAddToCardButton@34a3d150</td></tr>
-<tr>
-<td title='TestNGpack.VerifyAddToCardButton.openAmazonHomePage()'><b>openAmazonHomePage</b><br>Test class: TestNGpack.VerifyAddToCardButton</td>
-<td></td>
-<td>-1668947195</td>
-<td>TestNGpack.VerifyAddToCardButton@34a3d150</td></tr>
-<tr>
-<td title='TestNGpack.VerifyAddToCardButton.logOutFromApplication()'><b>logOutFromApplication</b><br>Test class: TestNGpack.VerifyAddToCardButton</td>
-<td></td>
-<td>-1668947195</td>
+<td>-1668947532</td>
 <td>TestNGpack.VerifyAddToCardButton@34a3d150</td></tr>
 <tr>
 <td title='TestNGpack.VerifyHomePage.createPOMObjects()'><b>createPOMObjects</b><br>Test class: TestNGpack.VerifyHomePage</td>
 <td></td>
-<td>-1668947195</td>
+<td>-1668947532</td>
 <td>TestNGpack.VerifyHomePage@5c6648b0</td></tr>
 <tr>
-<td title='TestNGpack.VerifyProductDetailspage.openAmazoneHomePage()'><b>openAmazoneHomePage</b><br>Test class: TestNGpack.VerifyProductDetailspage</td>
+<td title='TestNGpack.VerifyAddToCardButton.logOutFromApplication()'><b>logOutFromApplication</b><br>Test class: TestNGpack.VerifyAddToCardButton</td>
 <td></td>
-<td>-1668947195</td>
-<td>TestNGpack.VerifyProductDetailspage@2a4fb17b</td></tr>
-<tr>
-<td title='TestNGpack.VerifyAddToCardButton.createPOMObjects()'><b>createPOMObjects</b><br>Test class: TestNGpack.VerifyAddToCardButton</td>
-<td></td>
-<td>-1668947195</td>
+<td>-1668947532</td>
 <td>TestNGpack.VerifyAddToCardButton@34a3d150</td></tr>
-<tr>
-<td title='TestNGpack.VerifyProductDetailspage.logoutApplication()'><b>logoutApplication</b><br>Test class: TestNGpack.VerifyProductDetailspage</td>
-<td></td>
-<td>-1668947195</td>
-<td>TestNGpack.VerifyProductDetailspage@2a4fb17b</td></tr>
-<tr>
-<td title='TestNGpack.VerifyHomePage.clearAll()'><b>clearAll</b><br>Test class: TestNGpack.VerifyHomePage</td>
-<td></td>
-<td>-1668947195</td>
-<td>TestNGpack.VerifyHomePage@5c6648b0</td></tr>
-<tr>
-<td title='TestNGpack.VerifyHomePage.logoutFromApplication()'><b>logoutFromApplication</b><br>Test class: TestNGpack.VerifyHomePage</td>
-<td></td>
-<td>-1668947195</td>
-<td>TestNGpack.VerifyHomePage@5c6648b0</td></tr>
-<tr>
-<td title='TestNGpack.VerifyProductDetailspage.logoutApplication()'><b>logoutApplication</b><br>Test class: TestNGpack.VerifyProductDetailspage</td>
-<td></td>
-<td>-1668947195</td>
-<td>TestNGpack.VerifyProductDetailspage@2a4fb17b</td></tr>
-<tr>
-<td title='TestNGpack.VerifyProductDetailspage.launchBrowser()'><b>launchBrowser</b><br>Test class: TestNGpack.VerifyProductDetailspage</td>
-<td></td>
-<td>-1668947195</td>
-<td>TestNGpack.VerifyProductDetailspage@2a4fb17b</td></tr>
-<tr>
-<td title='TestNGpack.VerifyHomePage.openAmazonHomePage()'><b>openAmazonHomePage</b><br>Test class: TestNGpack.VerifyHomePage</td>
-<td></td>
-<td>-1668947195</td>
-<td>TestNGpack.VerifyHomePage@5c6648b0</td></tr>
-<tr>
-<td title='TestNGpack.VerifyProductDetailspage.openAmazoneHomePage()'><b>openAmazoneHomePage</b><br>Test class: TestNGpack.VerifyProductDetailspage</td>
-<td></td>
-<td>-1668947195</td>
-<td>TestNGpack.VerifyProductDetailspage@2a4fb17b</td></tr>
-<tr>
-<td title='TestNGpack.VerifyAddToCardButton.closeTheBrowser()'><b>closeTheBrowser</b><br>Test class: TestNGpack.VerifyAddToCardButton</td>
-<td></td>
-<td>-1668947195</td>
-<td>TestNGpack.VerifyAddToCardButton@34a3d150</td></tr>
-<tr>
-<td title='TestNGpack.VerifyHomePage.closeBrowser()'><b>closeBrowser</b><br>Test class: TestNGpack.VerifyHomePage</td>
-<td></td>
-<td>-1668947195</td>
-<td>TestNGpack.VerifyHomePage@5c6648b0</td></tr>
 <tr>
 <td title='TestNGpack.VerifyAddToCardButton.openAmazonHomePage()'><b>openAmazonHomePage</b><br>Test class: TestNGpack.VerifyAddToCardButton</td>
 <td></td>
-<td>-1668947195</td>
+<td>-1668947532</td>
+<td>TestNGpack.VerifyAddToCardButton@34a3d150</td></tr>
+<tr>
+<td title='TestNGpack.VerifyAddToCardButton.createPOMObjects()'><b>createPOMObjects</b><br>Test class: TestNGpack.VerifyAddToCardButton</td>
+<td></td>
+<td>-1668947532</td>
+<td>TestNGpack.VerifyAddToCardButton@34a3d150</td></tr>
+<tr>
+<td title='TestNGpack.VerifyAddToCardButton.logOutFromApplication()'><b>logOutFromApplication</b><br>Test class: TestNGpack.VerifyAddToCardButton</td>
+<td></td>
+<td>-1668947532</td>
 <td>TestNGpack.VerifyAddToCardButton@34a3d150</td></tr>
 <tr>
 <td title='TestNGpack.VerifyProductDetailspage.openAmazoneHomePage()'><b>openAmazoneHomePage</b><br>Test class: TestNGpack.VerifyProductDetailspage</td>
 <td></td>
-<td>-1668947195</td>
+<td>-1668947532</td>
 <td>TestNGpack.VerifyProductDetailspage@2a4fb17b</td></tr>
 <tr>
-<td title='TestNGpack.VerifyHomePage.openAmazonHomePage()'><b>openAmazonHomePage</b><br>Test class: TestNGpack.VerifyHomePage</td>
+<td title='TestNGpack.VerifyProductDetailspage.openAmazoneHomePage()'><b>openAmazoneHomePage</b><br>Test class: TestNGpack.VerifyProductDetailspage</td>
 <td></td>
-<td>-1668947195</td>
-<td>TestNGpack.VerifyHomePage@5c6648b0</td></tr>
+<td>-1668947532</td>
+<td>TestNGpack.VerifyProductDetailspage@2a4fb17b</td></tr>
 <tr>
 <td title='TestNGpack.VerifyProductDetailspage.logoutApplication()'><b>logoutApplication</b><br>Test class: TestNGpack.VerifyProductDetailspage</td>
 <td></td>
-<td>-1668947195</td>
+<td>-1668947532</td>
+<td>TestNGpack.VerifyProductDetailspage@2a4fb17b</td></tr>
+<tr>
+<td title='TestNGpack.VerifyAddToCardButton.openAmazonHomePage()'><b>openAmazonHomePage</b><br>Test class: TestNGpack.VerifyAddToCardButton</td>
+<td></td>
+<td>-1668947532</td>
+<td>TestNGpack.VerifyAddToCardButton@34a3d150</td></tr>
+<tr>
+<td title='TestNGpack.VerifyProductDetailspage.logoutApplication()'><b>logoutApplication</b><br>Test class: TestNGpack.VerifyProductDetailspage</td>
+<td></td>
+<td>-1668947532</td>
 <td>TestNGpack.VerifyProductDetailspage@2a4fb17b</td></tr>
 <tr>
 <td title='TestNGpack.VerifyProductDetailspage.closeBrowser()'><b>closeBrowser</b><br>Test class: TestNGpack.VerifyProductDetailspage</td>
 <td></td>
-<td>-1668947195</td>
+<td>-1668947532</td>
 <td>TestNGpack.VerifyProductDetailspage@2a4fb17b</td></tr>
 <tr>
-<td title='TestNGpack.VerifyAddToCardButton.logOutFromApplication()'><b>logOutFromApplication</b><br>Test class: TestNGpack.VerifyAddToCardButton</td>
+<td title='TestNGpack.VerifyAddToCardButton.closeTheBrowser()'><b>closeTheBrowser</b><br>Test class: TestNGpack.VerifyAddToCardButton</td>
 <td></td>
-<td>-1668947195</td>
-<td>TestNGpack.VerifyAddToCardButton@34a3d150</td></tr>
-<tr>
-<td title='TestNGpack.VerifyAddToCardButton.logOutFromApplication()'><b>logOutFromApplication</b><br>Test class: TestNGpack.VerifyAddToCardButton</td>
-<td></td>
-<td>-1668947195</td>
+<td>-1668947532</td>
 <td>TestNGpack.VerifyAddToCardButton@34a3d150</td></tr>
 <tr>
 <td title='TestNGpack.VerifyProductDetailspage.clearAll()'><b>clearAll</b><br>Test class: TestNGpack.VerifyProductDetailspage</td>
 <td></td>
-<td>-1668947195</td>
-<td>TestNGpack.VerifyProductDetailspage@2a4fb17b</td></tr>
-<tr>
-<td title='TestNGpack.VerifyProductDetailspage.createPOMObjects()'><b>createPOMObjects</b><br>Test class: TestNGpack.VerifyProductDetailspage</td>
-<td></td>
-<td>-1668947195</td>
+<td>-1668947532</td>
 <td>TestNGpack.VerifyProductDetailspage@2a4fb17b</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
@@ -300,42 +276,27 @@ Caused by: java.util.concurrent.TimeoutException
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestNGpack.VerifyHomePage.verifySearchBar()'><b>verifySearchBar</b><br>Test class: TestNGpack.VerifyHomePage</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-I18JAT8J&apos;, ip: &apos;192.168.87.188&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: driver.version: EdgeDriver
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+<td title='TestNGpack.VerifyHomePage.verifyhomepage()'><b>verifyhomepage</b><br>Test class: TestNGpack.VerifyHomePage</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\edgeBrowser
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
 	at setup.Base.openEdgeBrowser(Base.java:19)
 	at TestNGpack.VerifyAddToCardButton.launchBrowser(VerifyAddToCardButton.java:49)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:38009/status] to be available after 20001 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
-	... 31 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 32 more
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1300715911", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1300715911'><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-I18JAT8J&apos;, ip: &apos;192.168.87.188&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: driver.version: EdgeDriver
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace265428482", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace265428482'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\edgeBrowser
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
 	at setup.Base.openEdgeBrowser(Base.java:19)
 	at TestNGpack.VerifyAddToCardButton.launchBrowser(VerifyAddToCardButton.java:49)
@@ -361,55 +322,31 @@ Driver info: driver.version: EdgeDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:38009/status] to be available after 20001 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
-	... 31 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 32 more
 </pre></div></td>
 <td>0</td>
 <td>TestNGpack.VerifyHomePage@5c6648b0</td></tr>
 <tr>
-<td title='TestNGpack.VerifyProductDetailspage.verifyProductDitails()'><b>verifyProductDitails</b><br>Test class: TestNGpack.VerifyProductDetailspage</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-I18JAT8J&apos;, ip: &apos;192.168.87.188&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: driver.version: EdgeDriver
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+<td title='TestNGpack.VerifyAddToCardButton.logOutFromApplication()'><b>logOutFromApplication</b><br>Test class: TestNGpack.VerifyAddToCardButton</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\edgeBrowser
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
 	at setup.Base.openEdgeBrowser(Base.java:19)
 	at TestNGpack.VerifyAddToCardButton.launchBrowser(VerifyAddToCardButton.java:49)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:38009/status] to be available after 20001 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
-	... 31 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 32 more
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1649090718", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1649090718'><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-I18JAT8J&apos;, ip: &apos;192.168.87.188&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: driver.version: EdgeDriver
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace526037867", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace526037867'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\edgeBrowser
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
 	at setup.Base.openEdgeBrowser(Base.java:19)
 	at TestNGpack.VerifyAddToCardButton.launchBrowser(VerifyAddToCardButton.java:49)
@@ -435,55 +372,31 @@ Driver info: driver.version: EdgeDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:38009/status] to be available after 20001 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
-	... 31 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 32 more
 </pre></div></td>
 <td>0</td>
-<td>TestNGpack.VerifyProductDetailspage@2a4fb17b</td></tr>
+<td>TestNGpack.VerifyAddToCardButton@34a3d150</td></tr>
 <tr>
 <td title='TestNGpack.VerifyAddToCardButton.verifySearchBar()'><b>verifySearchBar</b><br>Test class: TestNGpack.VerifyAddToCardButton</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-I18JAT8J&apos;, ip: &apos;192.168.87.188&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: driver.version: EdgeDriver
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\edgeBrowser
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
 	at setup.Base.openEdgeBrowser(Base.java:19)
 	at TestNGpack.VerifyAddToCardButton.launchBrowser(VerifyAddToCardButton.java:49)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:38009/status] to be available after 20001 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
-	... 31 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 32 more
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1018138632", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1018138632'><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-I18JAT8J&apos;, ip: &apos;192.168.87.188&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: driver.version: EdgeDriver
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2080406371", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2080406371'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\edgeBrowser
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
 	at setup.Base.openEdgeBrowser(Base.java:19)
 	at TestNGpack.VerifyAddToCardButton.launchBrowser(VerifyAddToCardButton.java:49)
@@ -509,55 +422,31 @@ Driver info: driver.version: EdgeDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:38009/status] to be available after 20001 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
-	... 31 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 32 more
 </pre></div></td>
 <td>0</td>
 <td>TestNGpack.VerifyAddToCardButton@34a3d150</td></tr>
 <tr>
-<td title='TestNGpack.VerifyAddToCardButton.verifyAddToCardButton()'><b>verifyAddToCardButton</b><br>Test class: TestNGpack.VerifyAddToCardButton</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-I18JAT8J&apos;, ip: &apos;192.168.87.188&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: driver.version: EdgeDriver
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+<td title='TestNGpack.VerifyProductDetailspage.verifyProductDitails()'><b>verifyProductDitails</b><br>Test class: TestNGpack.VerifyProductDetailspage</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\edgeBrowser
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
 	at setup.Base.openEdgeBrowser(Base.java:19)
 	at TestNGpack.VerifyAddToCardButton.launchBrowser(VerifyAddToCardButton.java:49)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:38009/status] to be available after 20001 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
-	... 31 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 32 more
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1913770870", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1913770870'><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-I18JAT8J&apos;, ip: &apos;192.168.87.188&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: driver.version: EdgeDriver
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1331235738", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1331235738'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\edgeBrowser
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
 	at setup.Base.openEdgeBrowser(Base.java:19)
 	at TestNGpack.VerifyAddToCardButton.launchBrowser(VerifyAddToCardButton.java:49)
@@ -583,129 +472,31 @@ Driver info: driver.version: EdgeDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:38009/status] to be available after 20001 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
-	... 31 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 32 more
-</pre></div></td>
-<td>0</td>
-<td>TestNGpack.VerifyAddToCardButton@34a3d150</td></tr>
-<tr>
-<td title='TestNGpack.VerifyProductDetailspage.vefiySearchBarButton()'><b>vefiySearchBarButton</b><br>Test class: TestNGpack.VerifyProductDetailspage</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-I18JAT8J&apos;, ip: &apos;192.168.87.188&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: driver.version: EdgeDriver
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
-	at setup.Base.openEdgeBrowser(Base.java:19)
-	at TestNGpack.VerifyAddToCardButton.launchBrowser(VerifyAddToCardButton.java:49)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:38009/status] to be available after 20001 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
-	... 31 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 32 more
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1045899998", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1045899998'><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-I18JAT8J&apos;, ip: &apos;192.168.87.188&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: driver.version: EdgeDriver
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
-	at setup.Base.openEdgeBrowser(Base.java:19)
-	at TestNGpack.VerifyAddToCardButton.launchBrowser(VerifyAddToCardButton.java:49)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-	at org.testng.TestRunner.run(TestRunner.java:589)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:38009/status] to be available after 20001 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
-	... 31 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 32 more
 </pre></div></td>
 <td>0</td>
 <td>TestNGpack.VerifyProductDetailspage@2a4fb17b</td></tr>
 <tr>
 <td title='TestNGpack.VerifyProductDetailspage.verifyColourOfProduct()'><b>verifyColourOfProduct</b><br>Test class: TestNGpack.VerifyProductDetailspage</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-I18JAT8J&apos;, ip: &apos;192.168.87.188&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: driver.version: EdgeDriver
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\edgeBrowser
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
 	at setup.Base.openEdgeBrowser(Base.java:19)
 	at TestNGpack.VerifyAddToCardButton.launchBrowser(VerifyAddToCardButton.java:49)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:38009/status] to be available after 20001 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
-	... 31 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 32 more
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1567734428", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1567734428'><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-I18JAT8J&apos;, ip: &apos;192.168.87.188&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: driver.version: EdgeDriver
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1276471217", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1276471217'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\edgeBrowser
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
 	at setup.Base.openEdgeBrowser(Base.java:19)
 	at TestNGpack.VerifyAddToCardButton.launchBrowser(VerifyAddToCardButton.java:49)
@@ -731,55 +522,31 @@ Driver info: driver.version: EdgeDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:38009/status] to be available after 20001 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
-	... 31 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 32 more
 </pre></div></td>
 <td>0</td>
 <td>TestNGpack.VerifyProductDetailspage@2a4fb17b</td></tr>
 <tr>
-<td title='TestNGpack.VerifyAddToCardButton.logOutFromApplication()'><b>logOutFromApplication</b><br>Test class: TestNGpack.VerifyAddToCardButton</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-I18JAT8J&apos;, ip: &apos;192.168.87.188&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: driver.version: EdgeDriver
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+<td title='TestNGpack.VerifyAddToCardButton.verifyAddToCardButton()'><b>verifyAddToCardButton</b><br>Test class: TestNGpack.VerifyAddToCardButton</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\edgeBrowser
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
 	at setup.Base.openEdgeBrowser(Base.java:19)
 	at TestNGpack.VerifyAddToCardButton.launchBrowser(VerifyAddToCardButton.java:49)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:38009/status] to be available after 20001 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
-	... 31 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 32 more
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace697324605", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace697324605'><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-I18JAT8J&apos;, ip: &apos;192.168.87.188&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: driver.version: EdgeDriver
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace504590889", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace504590889'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\edgeBrowser
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
 	at setup.Base.openEdgeBrowser(Base.java:19)
 	at TestNGpack.VerifyAddToCardButton.launchBrowser(VerifyAddToCardButton.java:49)
@@ -805,55 +572,31 @@ Driver info: driver.version: EdgeDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:38009/status] to be available after 20001 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
-	... 31 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 32 more
 </pre></div></td>
 <td>0</td>
 <td>TestNGpack.VerifyAddToCardButton@34a3d150</td></tr>
 <tr>
-<td title='TestNGpack.VerifyHomePage.verifyhomepage()'><b>verifyhomepage</b><br>Test class: TestNGpack.VerifyHomePage</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-I18JAT8J&apos;, ip: &apos;192.168.87.188&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: driver.version: EdgeDriver
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+<td title='TestNGpack.VerifyProductDetailspage.vefiySearchBarButton()'><b>vefiySearchBarButton</b><br>Test class: TestNGpack.VerifyProductDetailspage</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\edgeBrowser
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
 	at setup.Base.openEdgeBrowser(Base.java:19)
 	at TestNGpack.VerifyAddToCardButton.launchBrowser(VerifyAddToCardButton.java:49)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:38009/status] to be available after 20001 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
-	... 31 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 32 more
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1576829362", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1576829362'><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-I18JAT8J&apos;, ip: &apos;192.168.87.188&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: driver.version: EdgeDriver
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:141)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace798948816", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace798948816'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\edgeBrowser
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
 	at setup.Base.openEdgeBrowser(Base.java:19)
 	at TestNGpack.VerifyAddToCardButton.launchBrowser(VerifyAddToCardButton.java:49)
@@ -879,15 +622,56 @@ Driver info: driver.version: EdgeDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:38009/status] to be available after 20001 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
-	... 31 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 32 more
+</pre></div></td>
+<td>0</td>
+<td>TestNGpack.VerifyProductDetailspage@2a4fb17b</td></tr>
+<tr>
+<td title='TestNGpack.VerifyHomePage.verifySearchBar()'><b>verifySearchBar</b><br>Test class: TestNGpack.VerifyHomePage</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\edgeBrowser
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at setup.Base.openEdgeBrowser(Base.java:19)
+	at TestNGpack.VerifyAddToCardButton.launchBrowser(VerifyAddToCardButton.java:49)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2061585502", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2061585502'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\JAYSHRI WASEKAR\git\AmazonRepository\AmazonAutomate\src\test\resources\browsers\edgeBrowser
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+	at setup.Base.openEdgeBrowser(Base.java:19)
+	at TestNGpack.VerifyAddToCardButton.launchBrowser(VerifyAddToCardButton.java:49)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
 <td>TestNGpack.VerifyHomePage@5c6648b0</td></tr>
